@@ -3,6 +3,10 @@ $(document).ready(function(){
     /******************************
      BOTTOM SCROLL TOP BUTTON
      ******************************/
+    
+    var imgHeight = $('.service-consult').height();
+    imgHeight = imgHeight + 200;
+    $('.service-consult img').css('height', imgHeight + 'px');
 
     // declare variable
     var scrollTop = $(".scrollTop");
