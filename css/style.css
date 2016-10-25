@@ -398,10 +398,13 @@
 .nav-lang{
     float: right;
 }
-
+.nav-active{
+    color: #fff;
+}
 #header{
     float: left;
     width: 100%;
+    position: relative;
 }
 .header-slide{
     float: left;
@@ -410,6 +413,24 @@
     background: url(../img/slide-1.png) center center no-repeat;
     background-size: 100% 100%;
 }
+.art-slide{
+    float: left;
+    width: 100%;
+    min-height: 700px;
+    background: url(../img/slide-1.png) center center no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+.art-back{
+    float: left;
+    width: 100%;
+    height: inherit;
+    min-height: inherit;
+    background: rgba(0,0,0,0.4);
+}
+.art-slide img{
+    display: none;
+}
 .wrap-slide{
     float: left;
     margin-left: 10%;
@@ -417,14 +438,60 @@
     margin-top: 100px;
     width: 80%;
 }
-.slide-left, .slide-right{
-    float: left;
-}
 .slide-left{
+    float: left;
     width: 65%;
 }
 .slide-right{
+    position: absolute;
+    right: 10%;
+    top: 100px;
     width: 35%;
+}
+.slide-bottom{
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+    width: 150px;
+    height: 15px;
+}
+.slide-nav{
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-transition: .1s linear;
+    transition: .1s linear;
+}
+.slide-nav:hover, .slide-nav-act{
+    background: #d2ab5e;
+    /*margin-top: -5px;
+    height: 20px;
+    width: 20px;
+    padding: 2px;*/
+}
+
+.slide-num{
+    position: absolute;
+    top: -15px;
+    right: -50px;
+    font-size: 35px;
+    color: rgba(58,71,89,0.5);
+    font-weight: bold;
+}
+.nm-line{
+    float: left;
+    height: 1px;
+    width: 25px;
+    margin-top: 25px;
+    margin-right: -10px;
+    background: #d2ab5e;
+}
+.static, .dynamic{
+    float: left;
 }
 
 .slide-left h1, .slide-left h2{
@@ -478,7 +545,9 @@
 }
 
 
-
+.article{
+    float: left;
+}
 .slide-right h1{
     float: left;
     width: 100%;
@@ -498,6 +567,7 @@
     text-align: right;
     text-decoration: underline;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .after-header{
@@ -507,6 +577,7 @@
 }
 .after-title{
     float: left;
+    position: relative;
     width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -529,6 +600,7 @@
 }
 .after-title h1{
     float: left;
+    position: relative;
     width: 100%;
 
     font-size: 35px;
@@ -536,6 +608,7 @@
     font-weight: 900;
     
     color: #d2ab5e;
+    z-index: 3;
 }
 
 .after-left, .after-right{
@@ -569,9 +642,11 @@
     float: left;
     width: 100%;
     margin-top: 150px;
+    position: relative;
 }
 .service-title h1{
     float: left;
+    
     width: 100%;
 
     font-size: 15px;
@@ -579,9 +654,12 @@
     font-weight: 900;
     
     color: #000;
+    
 }
 .service-title h2{
     float: left;
+    position: relative;
+    z-index: 3;
     width: 100%;
     margin-left: 35px;
 
@@ -765,6 +843,7 @@
     float: left;
     width: 100%;
     margin-top: 150px;
+    position: relative;
 }
 .partners-title h1{
     float: left;
@@ -786,6 +865,8 @@
     font-weight: 900;
     
     color: #d2ab5e;
+    position: relative;
+    z-index: 3;
 }
 
 #footer{
@@ -796,24 +877,22 @@
 }
 .footer-left{
     float: left;
-    width: 12%;
+    width: 20%;
 }
 .footer-left img{
     width: 110px;
 }
 .footer-center{
     float: left;
-    width: 70%;
+    width: 60%;
 }
 .foot-row-c{
     float: left;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
 }
 .foot-row{
     float: left;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
     margin-top: 25px;
 }
 .foot-row p{
@@ -836,7 +915,7 @@
 }
 .footer-right{
     float: left;
-    width: 18%;
+    width: 20%;
 }
 .foot-right{
     float: left;
@@ -941,4 +1020,28 @@
     float: left;
     height: 20px;
     margin-left: 15px;
+}
+
+.shadow, .shadow-2, .shadow-3, .shadow-4{
+    position: absolute;
+    color: #f9f3eb;
+    font-size: 64px;
+    font-weight: 900;
+    z-index: 2;
+}
+.shadow{
+    top: -30px;
+    left: 75px;
+}
+.shadow-2{
+    top: -10px;
+    left: 140px;
+}
+.shadow-3{
+    top: -10px;
+    left: 500px;
+}
+.shadow-4{
+    top: -10px;
+    left: 160px;
 }
