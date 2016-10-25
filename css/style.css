@@ -547,6 +547,7 @@
 
 .article{
     float: left;
+    width: 100%;
 }
 .slide-right h1{
     float: left;
