@@ -18,7 +18,7 @@
         margin-right: 10%;
         width: 80%;
     }
-    .slide-bottom{
+    .slide-bottom, .sd-bottom{
         left: 10%;
     }
     .slide-right{
@@ -89,7 +89,7 @@
         margin-left: 0;
         margin-right: 0;
     }
-    .slide-bottom{
+    .slide-bottom, .sd-bottom{
         left: 2%;
     }
     .slide-right{
@@ -220,7 +220,7 @@
         width: 90%;
         margin-left: 5%;
     }
-    .slide-bottom{
+    .slide-bottom, .sd-bottom{
         width: 70%;
         left: 5%;
         bottom: 75px;
