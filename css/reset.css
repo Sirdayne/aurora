@@ -82,10 +82,11 @@ body {
 	min-width: 278px;
 	position: relative;
 	line-height: 1.4;
+    height: auto;
     
 	/*font-family: "AgoraSansProLight";*/
     font-family: "Century Gothic";
-	overflow-x: hidden;
+    overflow-x: hidden;
     background: #fff;
 }
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */

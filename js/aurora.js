@@ -40,14 +40,10 @@ $(document).ready(function(){
     
     
     
-    $('.nav-burger').click(function() {
-        $('.navigation').removeClass('slideOutLeft');
-        $('.navigation').addClass('slideInLeft');
-        
-        $('.modal-back').fadeIn('fast');
-        
-        $('.navigation').slideDown('fast');
-        
+    $('.burger').click(function() {
+        $('.burger').toggleClass('bur-act');
+        $('.nav-center').fadeToggle('fast');
+        $('.burger-line-2').fadeToggle('fast');
     });
     
     $('.modal-back').click(function() {

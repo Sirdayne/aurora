@@ -12,6 +12,25 @@
 }
 
 /* mobile WIDTH fixes */
+@media only screen and (max-width : 2000px) {
+    .wrap, .wrap-slide{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+    .slide-bottom{
+        left: 10%;
+    }
+    .slide-right{
+        right: 10%;
+    }
+    .slide-right h1, .slide-right h2{
+        width: 70%;
+        margin-left: 30%;
+    }
+}
+
+
 @media only screen and (max-width : 1550px) {
     .nav{
         margin-right: 50px;
@@ -29,6 +48,35 @@
         margin-right: 15px;
     }
 }
+@media only screen and (max-width : 1200px) {
+    .slide-left h1, .slide-left h2{
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .exp-val-1, .exp-val-2, .exp-val-3{
+        font-size: 50px;
+        top: 0;
+    }
+    .exp-val-1{
+        right: 0px;
+    }
+    .exp-val-2{
+        right: -15px;
+    }
+    .exp-val-3{
+        right: -60px;
+    }
+    .slick-prev{
+        right: 104px;
+    }
+    .slick-next{
+        right: 50px;
+    }
+    .shadow, .shadow-2, .shadow-3, .shadow-4{
+        font-size: 24px;
+        display: none;
+    }
+}
 
 @media only screen and (max-width : 1000px) {
     .wrap, .wrap-slide{
@@ -41,16 +89,188 @@
         margin-left: 0;
         margin-right: 0;
     }
+    .slide-bottom{
+        left: 2%;
+    }
+    .slide-right{
+        right: 2%;
+    }
+}
+
+@media only screen and (max-width : 950px) {
+    .nav-center{
+        float: none;
+        position: absolute;
+        width: 100%;
+        bottom: -360px;
+        left: 0;
+        margin: 0;
+        min-height: 320px;
+        height: auto;
+        background: #152232;
+        z-index: 10;
+        display: none;
+    }
+    .nav{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
+    
+    .nav-lang{
+        display: none;
+    }
+    .nav-logo{
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    .mob-center{
+        float: left;
+        width: 50%;
+    }
+    .mob-right, .mob-left{
+        display: block;
+    }
+    .exp-abs{
+        position: absolute;
+        bottom: 5px;
+        left: 0px;
+        width: 150px;
+    }
+    .footer-left, .footer-center{
+        width: 100%;
+    }
+    .footer-left img{
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .foot{
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+        margin-right: 0;
+    }
+    .foot-row{
+        text-align: center;
+    }
+    .foot-row input, .foot-row button{
+        display: inline-block;
+        float: none;
+    }
+    .footer-right{
+        display: none;
+    }
+    .under-footer{
+        text-align: center;
+    }
+    .under-footer a{
+        display: inline-block;
+        float: none;
+    }
 }
 
 @media only screen and (max-width : 800px) {
-   
+    .ser-icon{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .ser-icon p{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .after-left, .after-right{
+        width: 100%;
+    }
+    .after-right h4{
+        margin-top: 25px;
+    }
+    .service-consult img{
+        display: none;
+    }
+    .service-img{
+        display: block;
+    }
+    .service-consult{
+        width: 50%;
+        margin-left: 15%;
+        margin-top: 5px;
+    }
+    .service-consult h4{
+        width: 100%;
+        margin: 0;
+    }
+    .exp-part{
+        width: 70%;
+        margin-top: 50px;
+    }
+    .exp-m-1{
+        margin-left: 10%;
+    }
+    .exp-m-2{
+        margin-left: 20%;
+    }
+    .slide-right{
+        display: none;
+    }
+    .slide-left{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .slide-bottom{
+        width: 70%;
+        left: 5%;
+        bottom: 75px;
+    }
+    .slide-nav{
+        width: 50px;
+        height: 50px;
+        margin-right: 12%;
+    }
+    .slide-num{
+        top: 4px;
+    }
 }
 
 @media only screen and (max-width : 750px) { 
-   
+    .mob-left, .mob-right{
+        width: 30%;
+    }
+    .mob-center{
+        width: 40%;
+    }
+    .slide-nav{
+        width: 40px;
+        height: 40px;
+        margin-right: 10%;
+    }
+    .slide-num{
+        top: -4px;
+    }
+    .partners-title h2{
+        font-size: 24px;
+    }
+    .service-consult{
+        width: 60%;
+        margin-left: 5%;
+        margin-top: 5px;
+    }
 }
 
 @media only screen and (max-width : 450px) { 
-    
+    .slide-left h1, .slide-left h2{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .slide-nav{
+        width: 30px;
+        height: 30px;
+        margin-right: 10%;
+    }
+    .slide-num{
+        top: -8px;
+    }
 }
