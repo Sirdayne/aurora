@@ -3,6 +3,21 @@ body{
     width: 100%;
 }
 
+.d-1{
+    animation-delay: .3s;
+}
+.d-2{
+    animation-delay: .6s;
+}
+.d-3{
+    animation-delay: .9s;
+}
+.d-4{
+    animation-delay: 1.2s;
+}
+.d-5{
+    animation-delay: 1.5s;
+}
 
 /* SLICK SLIDER START */
 .slick-slider
@@ -509,14 +524,14 @@ body{
     width: 100%;
     min-height: 700px;
     background: url(../img/slide-1.png) center center no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 .art-slide{
     float: left;
     width: 100%;
     min-height: 700px;
     background: url(../img/slide-1.png) center center no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     display: none;
 }
 .art-back{
@@ -1200,37 +1215,37 @@ body{
     width: 100%;
     height: 100%;
     background: url(../img/ser-tra.png) center center no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 .ser-aer{
     width: 100%;
     height: 100%;
     background: url(../img/ser-aer.png) center center no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 .ser-raz{
     width: 100%;
     height: 100%;
     background: url(../img/ser-raz.png) center center no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 .ser-bus{
     width: 100%;
     height: 100%;
     background: url(../img/ser-bus.png) center center no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 .ser-rab{
     width: 100%;
     height: 100%;
     background: url(../img/ser-rab.png) center center no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 .sr-left, .sr-right{
     float: left;
     width: 50%;
-    height: 85%;
-    padding-top: 15%;
+    height: 75%;
+    padding-top: 25%;
 }
 .sr-left h1, .sr-left h2{
     float: left;
@@ -1260,16 +1275,38 @@ body{
 }
 .sr-box{
     float: left;
-    width: 49%;
+    width: 48%;
     margin-top: 25px;
     margin-right: 1%;
     background: #fff;
+    border: 1px solid #fff;
 }
-.sr-right img{
+.sr-img-tra, .sr-img-aer, .sr-img-raz, .sr-img-bus, .sr-img-rab{
     float: left;
-    width: 49%;
+    width: 48%;
     margin-top: 25px;
     margin-left: 1%;
+    border: 1px solid #fff;
+}
+.sr-img-tra{
+    background: url(../img/ser-tra-img.png) center center no-repeat;
+    background-size: cover;
+}
+.sr-img-aer{
+    background: url(../img/ser-aer-img.png) center center no-repeat;
+    background-size: cover;
+}
+.sr-img-raz{
+    background: url(../img/ser-raz-img.png) center center no-repeat;
+    background-size: cover;
+}
+.sr-img-bus{
+    background: url(../img/ser-bus-img.png) center center no-repeat;
+    background-size: cover;
+}
+.sr-img-rab{
+    background: url(../img/ser-rab-img.png) center center no-repeat;
+    background-size: cover;
 }
 
 .sr-link{

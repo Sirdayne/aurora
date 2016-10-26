@@ -16,12 +16,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+   	<link rel="stylesheet" href="css/animate.css">
+  
     <link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/reset.css">
+	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="css/animate.css">
-  
+
   <!-- FullPage Scrolls -->
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     
@@ -35,17 +37,14 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				//anchors: ['main', 'comfort', 'speed', 'safe', 'commision', 'product', 'partners', 'apps'],
+				anchors: ['main', 'transfert', 'research', 'scout', 'business', 'job'],
                 //menu: '#menu',
-                scrollingSpeed: 1000,
-                /*
+                scrollingSpeed: 600,
+                
 				'onLeave': function(index, nextIndex, direction){
-                    
+                    /*
 					if (index == 1 && direction == 'down'){
 						$('.test').addClass('slideInRight');
-					}
-                    if (index == 2){
-						$('.test').removeClass('slideInRight');
 					}
                     if (index == 3 && direction == 'up'){
 						$('.test').addClass('slideInRight');
@@ -54,20 +53,42 @@
                     if (index != 0){
 						$('#moveTop').addClass('animated fadeInUp');
 					}
-				}
-                *
-                'afterLoad': function(anchorLink, index){
-                    if (index == 1){
-                        $('#moveTop').removeClass('fadeInUp');
-						$('#moveTop').addClass('fadeOutDown');
+                    */
+                    if (index > 0){
+						$('#full-navigation').addClass('slideOutUp');
+                        $('#full-navigation').removeClass('slideInDown');
 					}
-                    else{
-                        $('#moveTop').removeClass('fadeOutDown');
-                        $('#moveTop').addClass('fadeInUp');
+                    
+                    if (index > 1){
+                        $('.sr-box, .sr-block, .js-sr').addClass('fadeOut');
+                        $('.sr-box, .sr-block, .js-sr').removeClass('slideInUp');
+                        
+                        $('.sr-left h1, .sr-left h2').addClass('fadeOut');
+                        $('.sr-left h1, .sr-left h2').removeClass('slideInLeft');
+                        
+                        $('.js-a, .sd-bottom').addClass('fadeOutDown');
+                        $('.js-a, .sd-bottom').removeClass('fadeInUp');
+                    }
+				},
+                'afterLoad': function(anchorLink, index){
+                    if (index > 0){
+                        $('#full-navigation').removeClass('slideOutUp');
+                        $('#full-navigation').addClass('slideInDown');
                     }
                     
+                    if (index > 1){   
+                        $('.sr-box, .sr-block, .js-sr').removeClass('fadeOut');
+                        $('.sr-box, .sr-block, .js-sr').addClass('slideInUp');
+                        
+                        $('.sr-left h1, .sr-left h2').removeClass('fadeOut');
+                        $('.sr-left h1, .sr-left h2').addClass('slideInLeft');
+                        
+                        $('.js-a, .sd-bottom').removeClass('fadeOutDown');
+                        $('.js-a, .sd-bottom').addClass('fadeInUp');
+					}
+                    
+                    
                 }
-                */
 			});
 		});
 	</script>
@@ -75,7 +96,7 @@
 </head>
 <body>    
       
-        <section id="full-navigation">
+        <section id="full-navigation" class="animated slideInDown">
             <div class="wrap">
                 
                 <div class="mob-left">
@@ -133,34 +154,35 @@
             </section>
             
             <section class="section fp">
-                <div class="ser-tra">
+                <div class="ser-tra js-a animated">
                     <div class="wrap">
                         <div class="sr-left">
-                            <h1>ТРАНСФЕРТ</h1>
-                            <h2>ТЕХНОЛОГИЙ</h2>
+                            <h1 class="animated">ТРАНСФЕРТ</h1>
+                            <h2 class="animated d-1">ТЕХНОЛОГИЙ</h2>
                         </div>
                         <div class="sr-right">
-                            <div class="sr-block">
+                            <div class="sr-block animated">
                                <h2>
                                 Трансферт новых технологий в горнорудный и нефтегазовый сектор. В данный момент Aurora Minerals Group представляет компании:  GroundProbe, SkyTEM, MoHo, DIAS Geophysical.
                                 </h2>
                                 <a href=""><button class="sr-link"><div class="sr-line-lk"></div><p>ПОДРОБНЕЕ</p></button></a>
                             </div>
-                            <div class="sr-box">
+                            <div class="sr-box animated d-1">
                                 <h2>
                                     Оставьте заявку и наши специалисты свяжутся с вами
                                 </h2>
                                 <button class="sr-button"><div class="sr-line"></div><p>ОСТАВИТЬ ЗАЯВКУ</p></button>
                             </div>
-                            <img src="./img/ser-tra-img.png" alt="">
+                           
+                            <div class="sr-img-tra js-sr animated d-2"></div>
                         </div>
                     </div>
-                    <div class="sd-bottom">
-                        <div class="sd-nav sd-nav-act"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
+                    <div class="sd-bottom animated">
+                        <a href="#transfert"><div class="sd-nav sd-nav-act"></div></a>
+                        <a href="#research"><div class="sd-nav"></div></a>
+                        <a href="#scout"><div class="sd-nav"></div></a>
+                        <a href="#business"><div class="sd-nav"></div></a>
+                        <a href="#job"><div class="sd-nav"></div></a>
 
                         <div class="sd-num"><div class="sd-line"></div>1 этап</div>
                     </div>
@@ -168,34 +190,35 @@
             </section>
             
             <section class="section fp">
-                <div class="ser-aer">
+                <div class="ser-aer js-a animated">
                     <div class="wrap">
                         <div class="sr-left">
-                            <h1>АЭРОГЕОФИЗИЧЕСКИЕ</h1>
-                            <h2>ИССЛЕДОВАНИЯ</h2>
+                            <h1 class="animated">АЭРОГЕОФИЗИЧЕСКИЕ</h1>
+                            <h2 class="animated d-1">ИССЛЕДОВАНИЯ</h2>
                         </div>
                         <div class="sr-right">
-                            <div class="sr-block">
+                            <div class="sr-block animated">
                                <h2>
                                 Aurora Minerals Group оказывает услуги по проведению аэрогеофизических исследований методикой SkyTEM (электромагнитная аэрогеофизика) и аэромагнитной спектрометрии с использованием летательных средств.
                                 </h2>
                                 <a href=""><button class="sr-link"><div class="sr-line-lk"></div><p>ПОДРОБНЕЕ</p></button></a>
                             </div>
-                            <div class="sr-box">
+                            <div class="sr-box animated d-1">
                                 <h2>
                                     Оставьте заявку и наши специалисты свяжутся с вами
                                 </h2>
                                 <button class="sr-button"><div class="sr-line"></div><p>ОСТАВИТЬ ЗАЯВКУ</p></button>
                             </div>
-                            <img src="./img/ser-aer-img.png" alt="">
+                          
+                            <div class="sr-img-aer js-sr animated d-2"></div>
                         </div>
                     </div>
-                    <div class="sd-bottom">
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav sd-nav-act"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
+                    <div class="sd-bottom animated">
+                        <a href="#transfert"><div class="sd-nav"></div></a>
+                        <a href="#research"><div class="sd-nav sd-nav-act"></div></a>
+                        <a href="#scout"><div class="sd-nav"></div></a>
+                        <a href="#business"><div class="sd-nav"></div></a>
+                        <a href="#job"><div class="sd-nav"></div></a>
 
                         <div class="sd-num"><div class="sd-line"></div>2 этап</div>
                     </div>
@@ -203,36 +226,37 @@
             </section>
             
             <section class="section fp">
-                <div class="ser-raz">
+                <div class="ser-raz js-a animated">
                     <div class="wrap">
                         <div class="sr-left">
-                            <h1>РАЗВЕДКА И</h1>
-                            <h2>ДОБЫЧА 
+                            <h1 class="animated">РАЗВЕДКА И</h1>
+                            <h2 class="animated d-1">ДОБЫЧА 
                             <br>ПОЛЕЗНЫХ 
                             <br>ИСКОПАЕМЫХ</h2>
                         </div>
                         <div class="sr-right">
-                            <div class="sr-block">
+                            <div class="sr-block animated">
                                <h2>
                                 Разведка полезных ископаемых методикой SkyTEM. В качестве единственной системы, способной работать в режимах двойного передатчика, SkyTEM обеспечивает точными данными вблизи поверхности и данными на глубине до 500 м.
                                 </h2>
                                 <a href=""><button class="sr-link"><div class="sr-line-lk"></div><p>ПОДРОБНЕЕ</p></button></a>
                             </div>
-                            <div class="sr-box">
+                            <div class="sr-box animated d-1">
                                 <h2>
                                     Получите подробную консультацию от наших специалистов
                                 </h2>
                                 <button class="sr-button"><div class="sr-line"></div><p>ОБРАТНЫЙ ЗВОНОК</p></button>
                             </div>
-                            <img src="./img/ser-raz-img.png" alt="">
+                            
+                            <div class="sr-img-raz js-sr animated d-2"></div>
                         </div>
                     </div>
-                    <div class="sd-bottom">
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav sd-nav-act"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
+                    <div class="sd-bottom animated">
+                        <a href="#transfert"><div class="sd-nav"></div></a>
+                        <a href="#research"><div class="sd-nav"></div></a>
+                        <a href="#scout"><div class="sd-nav sd-nav-act"></div></a>
+                        <a href="#business"><div class="sd-nav"></div></a>
+                        <a href="#job"><div class="sd-nav"></div></a>
 
                         <div class="sd-num"><div class="sd-line"></div>3 этап</div>
                     </div>
@@ -240,35 +264,36 @@
             </section>
             
             <section class="section fp">
-                <div class="ser-bus">
+                <div class="ser-bus js-a animated">
                     <div class="wrap">
                         <div class="sr-left">
-                            <h1>БИЗНЕС И</h1>
-                            <h2>ИНВЕСТИЦИОННЫЕ 
+                            <h1 class="animated">БИЗНЕС И</h1>
+                            <h2 class="animated d-1">ИНВЕСТИЦИОННЫЕ 
                             <br>УСЛУГИ</h2>
                         </div>
                         <div class="sr-right">
-                            <div class="sr-block">
+                            <div class="sr-block animated">
                                <h2>
                                 Aurora Minerals Group предоставляет услуги по поиску и привлечению инвесторов в проект, получению и передаче (продаже) права недропользования. Оказывает поддержку инвесторов по входу и исследованию рынка.
                                 </h2>
                                 <a href=""><button class="sr-link"><div class="sr-line-lk"></div><p>ПОДРОБНЕЕ</p></button></a>
                             </div>
-                            <div class="sr-box">
+                            <div class="sr-box animated d-1">
                                 <h2>
                                     Обратитесь за консультацией к нашим специалистам
                                 </h2>
                                 <button class="sr-button"><div class="sr-line"></div><p>ОБРАТНЫЙ ЗВОНОК</p></button>
                             </div>
-                            <img src="./img/ser-bus-img.png" alt="">
+                           
+                            <div class="sr-img-bus js-sr animated d-2"></div>
                         </div>
                     </div>
-                    <div class="sd-bottom">
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav sd-nav-act"></div>
-                        <div class="sd-nav"></div>
+                    <div class="sd-bottom animated">
+                        <a href="#transfert"><div class="sd-nav"></div></a>
+                        <a href="#research"><div class="sd-nav"></div></a>
+                        <a href="#scout"><div class="sd-nav"></div></a>
+                        <a href="#business"><div class="sd-nav sd-nav-act"></div></a>
+                        <a href="#job"><div class="sd-nav"></div></a>
 
                         <div class="sd-num"><div class="sd-line"></div>4 этап</div>
                     </div>
@@ -276,36 +301,37 @@
             </section>
             
             <section class="section fp">
-                <div class="ser-rab">
+                <div class="ser-rab js-a animated">
                     <div class="wrap">
                         <div class="sr-left">
-                            <h1>РАБОТА </h1>
-                            <h2>С ГОСУДАРСТВЕННЫМИ
+                            <h1 class="animated">РАБОТА </h1>
+                            <h2 class="animated d-1">С ГОСУДАРСТВЕННЫМИ
                             <br>ОРГАНАМИ И 
                             <br>ОТЧЕТНОСТЬ</h2>
                         </div>
                         <div class="sr-right">
-                            <div class="sr-block">
+                            <div class="sr-block animated">
                                <h2>
                                 Aurora Minerals Group оказывает поддержку в получении прав на недропользование для инвесторов, согласовании и подписании договоров с государственными органами, предоставлении периодической отчетности в госорганы.
                                 </h2>
                                 <a href=""><button class="sr-link"><div class="sr-line-lk"></div><p>ПОДРОБНЕЕ</p></button></a>
                             </div>
-                            <div class="sr-box">
+                            <div class="sr-box animated d-1">
                                 <h2>
                                     Обратитесь за консультацией к нашим специалистам
                                 </h2>
                                 <button class="sr-button"><div class="sr-line"></div><p>ОБРАТНЫЙ ЗВОНОК</p></button>
                             </div>
-                            <img src="./img/ser-rab-img.png" alt="">
+                            
+                            <div class="sr-img-rab js-sr animated d-2"></div>
                         </div>
                     </div>
-                    <div class="sd-bottom">
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav"></div>
-                        <div class="sd-nav sd-nav-act"></div>
+                    <div class="sd-bottom animated">
+                        <a href="#transfert"><div class="sd-nav"></div></a>
+                        <a href="#research"><div class="sd-nav"></div></a>
+                        <a href="#scout"><div class="sd-nav"></div></a>
+                        <a href="#business"><div class="sd-nav"></div></a>
+                        <a href="#job"><div class="sd-nav sd-nav-act"></div></a>
 
                         <div class="sd-num"><div class="sd-line"></div>5 этап</div>
                     </div>
@@ -412,7 +438,7 @@
             
             for (var i = 0; i < 5; i++) {
                 
-               $('.sr-right img').eq( i ).css('height', $('.sr-box').eq( i ).css('height') );
+               $('.js-sr').eq( i ).css('height', $('.sr-box').eq( i ).css('height') );
                 
             }
 

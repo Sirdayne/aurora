@@ -4,7 +4,10 @@
 }
 
 @media only screen and (max-height : 1000px) {
-   
+   .sr-left, .sr-right{
+        height: 85%;
+        padding-top: 15%;
+    }
 }
 
 @media only screen and (max-height : 700px) {
