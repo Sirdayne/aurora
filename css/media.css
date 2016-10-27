@@ -44,11 +44,11 @@
     .foot{
         margin-right: 15px;
     }
-}
-
-@media only screen and (max-width : 1300px) {
     .nav{
         margin-right: 15px;
+    }
+    .nav-l{
+        margin-left: 15px;
     }
 }
 @media only screen and (max-width : 1200px) {
