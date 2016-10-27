@@ -605,6 +605,7 @@ body{
     font-size: 35px;
     color: rgba(58,71,89,0.5);
     font-weight: bold;
+    font-family: "GOTHICB";
 }
 .nm-line{
     float: left;
@@ -625,6 +626,7 @@ body{
     line-height: 70px;
     text-transform: uppercase;
     font-weight: 600;
+    font-family: "GOTHICB";
 }
 .slide-left h1{
     color: #d2ab5e;
@@ -743,7 +745,7 @@ body{
     font-size: 35px;
     line-height: 35px;
     font-weight: 900;
-    
+    font-family: "GOTHICB";
     color: #d2ab5e;
     z-index: 3;
 }
@@ -790,7 +792,7 @@ body{
     font-size: 15px;
     line-height: 35px;
     font-weight: 900;
-    
+    font-family: "GOTHICB";
     color: #000;
     
 }
@@ -804,7 +806,7 @@ body{
     font-size: 35px;
     line-height: 35px;
     font-weight: 900;
-    
+    font-family: "GOTHICB";
     color: #d2ab5e;
 }
 .service-icons{
@@ -869,7 +871,7 @@ body{
     margin-left: 4%;
     margin-right: 4%;
     border: 1px solid rgba(0,0,0,0);
-    font-family: "Century Gothic";
+    font-family: "GOTHIC";
 }
 .cs-button{
     position: absolute;
@@ -881,7 +883,7 @@ body{
     background: #fff; 
     -webkit-transition: .2s linear;
     transition: .2s linear;
-    font-family: "Century Gothic";
+    font-family: "GOTHIC";
 }
 .cs-button:hover{
     background: #292929;
@@ -944,6 +946,7 @@ body{
     font-size: 100px;
     color: #d2ab5e;
     font-weight: 900;
+    font-family: "GOTHICB";
 }
 .exp-val-1{
     right: -20px;
@@ -1000,7 +1003,7 @@ body{
     font-size: 15px;
     line-height: 35px;
     font-weight: 900;
-    
+    font-family: "GOTHICB";
     color: #000;
 }
 .partners-title h2{
@@ -1011,7 +1014,7 @@ body{
     font-size: 35px;
     line-height: 35px;
     font-weight: 900;
-    
+    font-family: "GOTHICB";
     color: #d2ab5e;
     position: relative;
     z-index: 3;
@@ -1094,7 +1097,7 @@ body{
     outline: none;
     border: none;
     border-bottom: 1px solid #fff;
-    font-family: "Century Gothic";
+    font-family: "GOTHIC";
     background: rgba(0,0,0,0);
     width: 170px;
     margin-right: 25px;
@@ -1116,7 +1119,7 @@ body{
     -webkit-transition: .2s linear;
     transition: .2s linear;
     color: #fff;
-    font-family: "Century Gothic";
+    font-family: "GOTHIC";
 }
 .send-button:hover{
     background: #fff;
@@ -1175,6 +1178,7 @@ body{
     color: #f9f3eb;
     font-size: 64px;
     font-weight: 900;
+    font-family: "GOTHICB";
     z-index: 2;
 }
 .shadow{
@@ -1328,6 +1332,7 @@ body{
     font-size: 42px;
     line-height: 42px;
     font-weight: 600;
+    font-family: "GOTHICB";
 }
 .sr-left h1{
     color: #d2ab5e;
@@ -1393,7 +1398,7 @@ body{
     background: #fff; 
     -webkit-transition: .2s linear;
     transition: .2s linear;
-    font-family: "Century Gothic";
+    font-family: "GOTHIC";
 }
 .sr-link:hover{
     background: #d7b571;
@@ -1429,7 +1434,7 @@ body{
     background: #fff; 
     -webkit-transition: .2s linear;
     transition: .2s linear;
-    font-family: "Century Gothic";
+    font-family: "GOTHIC";
 }
 .sr-button:hover{
     background: #292929;
@@ -1488,6 +1493,7 @@ body{
     font-size: 35px;
     color: rgba(128,110,71,0.8);
     font-weight: bold;
+    font-family: "GOTHICB";
 }
 .sd-line{
     float: left;
@@ -1752,6 +1758,7 @@ body{
     font-size: 24px;
     line-height: 24px;
     font-weight: 600;
+    font-family: "GOTHICB";
     top: -70px;
     left: 31%;
     text-transform: uppercase;
@@ -1766,7 +1773,7 @@ body{
     background: #fff; 
     -webkit-transition: .2s linear;
     transition: .2s linear;
-    font-family: "Century Gothic";
+    font-family: "GOTHIC";
 }
 .rs-button:hover{
     background: #292929;
@@ -1793,7 +1800,7 @@ body{
     background: #fff; 
     -webkit-transition: .2s linear;
     transition: .2s linear;
-    font-family: "Century Gothic";
+    font-family: "GOTHIC";
 }
 .gold-button:hover{
     background: #d2ab5e;
@@ -1855,6 +1862,7 @@ body{
     width: 100%;
     color: #fff;
     font-weight: 600;
+    font-family: "GOTHICB";
     font-size: 32px;
     line-height: 60px;
     position: relative;
@@ -1886,7 +1894,7 @@ body{
     outline: none;
     border: none;
     border-bottom: 1px solid #fff;
-    font-family: "Century Gothic";
+    font-family: "GOTHIC";
     background: rgba(0,0,0,0);
     width: 40%;   
     max-width: 500px;
@@ -1911,7 +1919,7 @@ body{
     -webkit-transition: .2s linear;
     transition: .2s linear;
     color: #fff;
-    font-family: "Century Gothic";
+    font-family: "GOTHIC";
 }
 .form-button:hover{
     background: #fff;
@@ -1957,6 +1965,10 @@ body{
     display: inline-block;
     height: 100%;
     width: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 25px 0;
+    /*border: 1px solid #d2ab5e;*/
 }
 .og-1{
     background: url(../img/rs-1.png) center center no-repeat;
