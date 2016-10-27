@@ -54,38 +54,106 @@
 						$('#moveTop').addClass('animated slideInUp');
 					}
                     */
+                    
+                    if (index == 1){
+						$('.header-box').removeClass('slideInUp');
+                        $('.header-box').addClass('slideOutUp');
+					}
+                    /* END OF FIRST */
+                    
+                    
                     if (index > 0){
 						$('#full-navigation').addClass('slideOutUp');
                         $('#full-navigation').removeClass('slideInDown');
 					}
+                    /* END OF NAVIGATION */
                     
                     if (index > 1){
-                        $('.sr-box, .sr-block, .js-sr').addClass('fadeOut');
-                        $('.sr-box, .sr-block, .js-sr').removeClass('slideInUp');
                         
-                        $('.sr-left h1, .sr-left h2').addClass('fadeOut');
-                        $('.sr-left h1, .sr-left h2').removeClass('slideInLeft');
+                        $('.sr-box, .sr-block, .js-sr').removeClass('fadeInUp').hide();
                         
-                        $('.js-a, .sd-bottom').addClass('slideOutDown');
-                        $('.js-a, .sd-bottom').removeClass('slideInUp');
+                        $('.sr-left h1, .sr-left h2, .sd-bottom').removeClass('fadeInLeft').hide();
+                        
+                        /*
+                        $('.js-a').addClass('slideOutUp');
+                        $('.js-a').removeClass('slideInDown');
+                        */
                     }
+                    /* END OF SMALL DETAILS */
+                    
+                    
+                    if (index == 1 && direction == 'down' ){
+                        $('.js-2').removeClass('fadeOutUp fadeOutDown').css('z-index','2').show();
+                    }
+                    if (index == 2 && direction == 'down' ){
+                        $('.js-2').removeClass('fadeOutUp').addClass('fadeOutDown').css('z-index','1');
+                        $('.js-3').removeClass('fadeOutUp').css('z-index','2').show();
+                    }
+                    if (index == 3 && direction == 'down' ){
+                        $('.js-3').removeClass('fadeOutUp').addClass('fadeOutDown').css('z-index','1');
+                        $('.js-4').removeClass('fadeOutUp').css('z-index','2').show();
+                    }
+                    if (index == 4 && direction == 'down' ){
+                        $('.js-4').removeClass('fadeOutUp').addClass('fadeOutDown').css('z-index','1');
+                        $('.js-5').removeClass('fadeOutUp').css('z-index','2').show();
+                    }
+                    if (index == 5 && direction == 'down' ){
+                        $('.js-5').removeClass('fadeOutUp').addClass('fadeOutDown').css('z-index','1');
+                        $('.js-6').removeClass('fadeOutUp').css('z-index','2').show();
+                    }
+                    
+                    if (index == 2 && direction == 'up' ){
+                        $('.js-2').removeClass('fadeOutUp').addClass('fadeOutDown').css('z-index','1');
+                        $('.js-3').removeClass('fadeOutUp').css('z-index','2').show();
+                    }
+                    
+                    
+                    
+                    if (index == 3 && direction == 'up' ){
+                        $('.js-3').removeClass('fadeOutDown').addClass('fadeOutUp').css('z-index','1');
+                        $('.js-2').removeClass('fadeOutDown').css('z-index','2').show();
+                    }
+                    if (index == 4 && direction == 'up' ){
+                        $('.js-4').removeClass('fadeOutDown').addClass('fadeOutUp').css('z-index','1');
+                        $('.js-3').removeClass('fadeOutDown').css('z-index','2').show();
+                    }
+                    if (index == 5 && direction == 'up' ){
+                        $('.js-5').removeClass('fadeOutDown').addClass('fadeOutUp').css('z-index','1');
+                        $('.js-4').removeClass('fadeOutDown').css('z-index','2').show();
+                    }
+                    if (index == 6 && direction == 'up' ){
+                        $('.js-6').removeClass('fadeOutDown').addClass('fadeOutUp').css('z-index','1');
+                        $('.js-5').removeClass('fadeOutDown').css('z-index','2').show();
+                    }
+                    
+                    
 				},
                 'afterLoad': function(anchorLink, index){
+                    if (index == 1){
+                        $('.header-box').addClass('slideInUp');
+                        $('.header-box').removeClass('slideOutUp');
+                    }
+                    /* END OF FIRST */
+                    
                     if (index > 0){
                         $('#full-navigation').removeClass('slideOutUp');
                         $('#full-navigation').addClass('slideInDown');
                     }
+                    /* END OF NAVIGATION */
+                    
                     
                     if (index > 1){   
-                        $('.sr-box, .sr-block, .js-sr').removeClass('fadeOut');
-                        $('.sr-box, .sr-block, .js-sr').addClass('slideInUp');
+                        $('.sr-box, .sr-block, .js-sr').show().addClass('fadeInUp');
                         
-                        $('.sr-left h1, .sr-left h2').removeClass('fadeOut');
-                        $('.sr-left h1, .sr-left h2').addClass('slideInLeft');
+                        $('.sr-left h1, .sr-left h2, .sd-bottom').show().addClass('fadeInLeft');
                         
-                        $('.js-a, .sd-bottom').removeClass('slideOutDown');
-                        $('.js-a, .sd-bottom').addClass('slideInUp');
+                        /*
+                        $('.js-a').removeClass('slideOutUp');
+                        $('.js-a').addClass('slideInDown');
+                        */
+                        
 					}
+                    /* END OF SMALL DETAILS */
                     
                     
                 }
@@ -135,26 +203,48 @@
        
             <section class="section ser-header fp">
                 
-                <div class="header-box h-1">
-                    <img src="./img/service-tra.png" alt="">
+                <div class="header-box h-1 animated slideInUp d-1">
+                    
+                    <h2><div class="h-line"></div>ТРАНСФЕРТ
+                    <br> ТЕХНОЛОГИЙ</h2>
+                    <div class="h-num"><div class="sd-line"></div>01</div>
                 </div>
-                <div class="header-box h-2">
-                    <img src="./img/service-aer.png" alt="">
+                <div class="header-box h-2 animated slideInUp d-2">
+                    
+                    <h2><div class="h-line"></div>АЭРОГЕОФИЗИЧЕСКИЕ
+                    <br> ИССЛЕДОВАНИЯ</h2>
+                    <div class="h-num"><div class="sd-line"></div>02</div>
                 </div>
-                <div class="header-box h-3">
-                    <img src="./img/service-raz.png" alt="">
+                <div class="header-box h-3 animated slideInUp d-3">
+                    
+                    <h2><div class="h-line"></div>РАЗВЕДКА И
+                        <br>ДОБЫЧА ПОЛЕЗНЫХ
+                        <br>ИСКОПАЕМЫХ
+                    </h2>
+                    <div class="h-num"><div class="sd-line"></div>03</div>
                 </div>
-                <div class="header-box h-4">
-                    <img src="./img/service-bus.png" alt="">
+                <div class="header-box h-4 animated slideInUp d-4">
+                    
+                    <h2><div class="h-line"></div>БИЗНЕС И
+                    <br>ИНВЕСТИЦИОННЫЕ
+                    <br>УСЛУГИ
+                    </h2>
+                    <div class="h-num"><div class="sd-line"></div>04</div>
                 </div>
-                <div class="header-box h-5">
-                    <img src="./img/service-rab.png" alt="">
+                <div class="header-box h-5 animated slideInUp d-5">
+                    
+                    <h2><div class="h-line"></div>РАБОТА С
+                    <br>ГОСУДАРСТВЕННЫМИ
+                    <br>ОРГАНАМИ И
+                    <br>ОТЧЕТНОСТЬ
+                    </h2>
+                    <div class="h-num"><div class="sd-line"></div>05</div>
                 </div>
                 
             </section>
             
             <section class="section fp">
-                <div class="ser-tra js-a animated slideOutDown">
+                <div class="ser-tra js-a js-2 animated">
                     <div class="wrap">
                         <div class="sr-left">
                             <h1 class="animated">ТРАНСФЕРТ</h1>
@@ -177,7 +267,7 @@
                             <div class="sr-img-tra js-sr animated d-2"></div>
                         </div>
                     </div>
-                    <div class="sd-bottom animated">
+                    <div class="sd-bottom animated d-2">
                         <a href="#transfert"><div class="sd-nav sd-nav-act"></div></a>
                         <a href="#research"><div class="sd-nav"></div></a>
                         <a href="#scout"><div class="sd-nav"></div></a>
@@ -190,7 +280,7 @@
             </section>
             
             <section class="section fp">
-                <div class="ser-aer js-a animated slideOutDown">
+                <div class="ser-aer js-a js-3 animated">
                     <div class="wrap">
                         <div class="sr-left">
                             <h1 class="animated">АЭРОГЕОФИЗИЧЕСКИЕ</h1>
@@ -213,7 +303,7 @@
                             <div class="sr-img-aer js-sr animated d-2"></div>
                         </div>
                     </div>
-                    <div class="sd-bottom animated">
+                    <div class="sd-bottom animated d-2">
                         <a href="#transfert"><div class="sd-nav"></div></a>
                         <a href="#research"><div class="sd-nav sd-nav-act"></div></a>
                         <a href="#scout"><div class="sd-nav"></div></a>
@@ -226,7 +316,7 @@
             </section>
             
             <section class="section fp">
-                <div class="ser-raz js-a animated slideOutDown">
+                <div class="ser-raz js-a js-4 animated">
                     <div class="wrap">
                         <div class="sr-left">
                             <h1 class="animated">РАЗВЕДКА И</h1>
@@ -251,7 +341,7 @@
                             <div class="sr-img-raz js-sr animated d-2"></div>
                         </div>
                     </div>
-                    <div class="sd-bottom animated">
+                    <div class="sd-bottom animated d-2">
                         <a href="#transfert"><div class="sd-nav"></div></a>
                         <a href="#research"><div class="sd-nav"></div></a>
                         <a href="#scout"><div class="sd-nav sd-nav-act"></div></a>
@@ -264,7 +354,7 @@
             </section>
             
             <section class="section fp">
-                <div class="ser-bus js-a animated slideOutDown">
+                <div class="ser-bus js-a js-5 animated">
                     <div class="wrap">
                         <div class="sr-left">
                             <h1 class="animated">БИЗНЕС И</h1>
@@ -288,7 +378,7 @@
                             <div class="sr-img-bus js-sr animated d-2"></div>
                         </div>
                     </div>
-                    <div class="sd-bottom animated">
+                    <div class="sd-bottom animated d-2">
                         <a href="#transfert"><div class="sd-nav"></div></a>
                         <a href="#research"><div class="sd-nav"></div></a>
                         <a href="#scout"><div class="sd-nav"></div></a>
@@ -301,7 +391,7 @@
             </section>
             
             <section class="section fp">
-                <div class="ser-rab js-a animated slideOutDown">
+                <div class="ser-rab js-a js-6 animated">
                     <div class="wrap">
                         <div class="sr-left">
                             <h1 class="animated">РАБОТА </h1>
@@ -326,7 +416,7 @@
                             <div class="sr-img-rab js-sr animated d-2"></div>
                         </div>
                     </div>
-                    <div class="sd-bottom animated">
+                    <div class="sd-bottom animated d-2">
                         <a href="#transfert"><div class="sd-nav"></div></a>
                         <a href="#research"><div class="sd-nav"></div></a>
                         <a href="#scout"><div class="sd-nav"></div></a>
@@ -479,6 +569,13 @@
                 
                 $(this).css( 'z-index' , '1' );
                       
+            });
+            
+            $('.sd-bottom').click(function() {
+
+                $('.js-a').removeClass('fadeOutUp fadeOutDown');
+                $('.js-a').show().css('opacity', '1');
+                                      
             });
             
         });

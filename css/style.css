@@ -1185,28 +1185,50 @@ body{
     -webkit-transition: .5s linear;
     transition: .5s linear;
     z-index: 1;
-    overflow: hidden;
-}
-.header-box img{
-    width: 350px;
-    height: 100%;
-    -webkit-transition: .5s linear;
-    transition: .5s linear;
 }
 .h-1{
     left: 0%;
+    background: url(../img/service-tra.png) center center no-repeat;
+    background-size: cover;
 }
 .h-2{
     left: 20%;
+    background: url(../img/service-aer.png) center center no-repeat;
+    background-size: cover;
 }
 .h-3{
     left: 40%;
+    background: url(../img/service-raz.png) center center no-repeat;
+    background-size: cover;
 }
 .h-4{
     left: 60%;
+    background: url(../img/service-bus.png) center center no-repeat;
+    background-size: cover;
 }
 .h-5{
     left: 80%;
+    background: url(../img/service-rab.png) center center no-repeat;
+    background-size: cover;
+}
+.header-box h2{
+    position: absolute;
+    width: 80%;
+    top: 47%;
+    left: 10%;
+    color: #fff;
+    font-size: 24px;
+    line-height: 27px;
+    position: relative;
+    font-weight: 100;
+}
+.h-line{
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    background: #d2ab5e;
+    top: 12px;
+    left: -20px;
 }
 .section{
      background: #152232;   
@@ -1421,4 +1443,13 @@ body{
     margin-top: 25px;
     margin-right: -10px;
     background: #d2ab5e;
+}
+
+.h-num{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 35px;
+    color: rgba(128,110,71,0.8);
+    font-weight: bold;
 }
