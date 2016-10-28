@@ -389,8 +389,8 @@ body{
     float: left;
     width: 100%;
     background: #152232;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     position: relative;
 }
 #full-navigation{
@@ -399,8 +399,8 @@ body{
     left: 0;
     width: 100%;
     background: rgba(0,0,0,0.5);
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     z-index: 71;
 }
 #res-navigation{
@@ -409,8 +409,8 @@ body{
     left: 0;
     width: 100%;
     background: rgba(0,0,0,0.5);
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     z-index: 71;
 }
 .nav-logo{
@@ -428,9 +428,9 @@ body{
 .nav{
     float: left;
     color: #d2ab5e;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 73px;
-    margin-right: 75px;
+    margin-right: 55px;
     -webkit-transition: .2s linear;
     transition: .2s linear;
 }
@@ -440,7 +440,7 @@ body{
 .nav-l{
     float: left;
     color: #d2ab5e;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 73px;
     margin-left: 75px;
     -webkit-transition: .2s linear;
@@ -518,11 +518,11 @@ body{
     text-align: right;
 }
 .mob-right p{
-    margin-top: 15px;
-    font-size: 14px;
+    margin-top: 25px;
+    font-size: 10px;
 }
 .mob-right h2{
-    font-size: 17px;
+    font-size: 12px;
 }
 
 #header{
@@ -533,7 +533,7 @@ body{
 .header-slide{
     float: left;
     width: 100%;
-    min-height: 700px;
+    min-height: calc(100vh - 103px);
     background: url(../img/slide-1.png) center center no-repeat;
     background-size: cover;
 }
@@ -646,6 +646,7 @@ body{
 .slide-left a{
     float: left;
     margin-top: 35px;
+    margin-bottom: 150px;
     color: #fff;
     padding: 15px 35px 15px 0;
     border: 1px solid #d2ab5e;
@@ -655,12 +656,14 @@ body{
 .slide-left button{
     float: left;
     margin-top: 35px;
+    margin-bottom: 150px;
     color: #fff;
     padding: 15px 35px 15px 0;
     border: 1px solid #d2ab5e;
     -webkit-transition: .2s linear;
     transition: .2s linear;
     background: rgba(0,0,0,0);
+    font-family: "GOTHIC";
 }
 .slide-left h4{
     float: left;
@@ -737,7 +740,7 @@ body{
     width: 25px;
     background: #d2ab5e;
 }
-.after-title h1{
+.after-title span{
     float: left;
     position: relative;
     width: 100%;
@@ -784,7 +787,7 @@ body{
     position: relative;
     text-transform: uppercase;
 }
-.service-title h1{
+.service-title span{
     float: left;
     
     width: 100%;
@@ -1056,7 +1059,7 @@ body{
 .foot{
     display: inline-block;
     color: #d2ab5e;
-    font-size: 18px;
+    font-size: 14px;
     margin-right: 6%;
     -webkit-transition: .2s linear;
     transition: .2s linear;
@@ -1266,7 +1269,7 @@ body{
     background: url(../img/service-rab.png) center center no-repeat;
     background-size: cover;
 }
-.header-box h2{
+.header-box span{
     position: absolute;
     width: 80%;
     top: 47%;
@@ -1519,7 +1522,7 @@ body{
 .header-research{
     float: left;
     width: 100%;
-    min-height: 700px;
+    min-height: 100vh;
     background: url(../img/research-header.png) center center no-repeat;
     background-size: cover;
 }
@@ -1571,7 +1574,7 @@ body{
     z-index: 2;
 }
 
-.si-box h3{
+.si-box span{
     margin-left: 45%;
     width: 40%;
     margin-right: 5%;
@@ -1857,7 +1860,7 @@ body{
     margin-top: 65px;
 }
 
-.form-left h3{
+.form-left span{
     float: left;
     width: 100%;
     color: #fff;

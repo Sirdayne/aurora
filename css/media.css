@@ -9,9 +9,22 @@
         padding-top: 15%;
     }
 }
+@media only screen and (max-height : 1000px) {
+    
+}
 
 @media only screen and (max-height : 700px) {
-	
+	.sr-left, .sr-right{
+        height: 85%;
+        padding-top: 15%;
+    }
+    .sr-block h2, .sr-box h2{
+        font-size: 14px;
+        margin: 15px;
+    }
+    .sr-button{
+        margin: 15px;
+    }
 }
 
 /* mobile WIDTH fixes */
@@ -36,7 +49,7 @@
 
 @media only screen and (max-width : 1550px) {
     .nav{
-        margin-right: 50px;
+        margin-right: 35px;
     }
 }
 
@@ -44,18 +57,26 @@
     .foot{
         margin-right: 15px;
     }
-    .nav{
-        margin-right: 15px;
-    }
+    
     .nav-l{
         margin-left: 15px;
     }
-}
-@media only screen and (max-width : 1200px) {
     .slide-left h1, .slide-left h2{
         font-size: 32px;
         line-height: 34px;
     }
+}
+@media only screen and (max-width : 1250px) {
+.nav{
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width : 1070px) {
+.nav{
+        margin-right: 5px;
+    }
+}
+@media only screen and (max-width : 1200px) {
     .exp-val-1, .exp-val-2, .exp-val-3{
         font-size: 50px;
         top: 0;
@@ -105,10 +126,10 @@
         float: none;
         position: absolute;
         width: 100%;
-        bottom: -360px;
+        bottom: -300px;
         left: 0;
         margin: 0;
-        min-height: 320px;
+        min-height: 300px;
         height: auto;
         background: #152232;
         z-index: 10;
@@ -119,6 +140,7 @@
         margin-left: 10%;
         margin-right: 10%;
         text-align: center;
+        line-height: 50px;
     }
     
     .nav-lang{
