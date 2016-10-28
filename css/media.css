@@ -67,14 +67,13 @@
     }
 }
 @media only screen and (max-width : 1250px) {
-.nav{
-        margin-right: 15px;
+    .nav{
+            margin-right: 15px;
+        }
+    .header-box span{
+        font-size: 14px;
     }
 }
-@media only screen and (max-width : 1070px) {
-.nav{
-        margin-right: 5px;
-    }
 }
 @media only screen and (max-width : 1200px) {
     .exp-val-1, .exp-val-2, .exp-val-3{
@@ -96,11 +95,17 @@
     .slick-next{
         right: 50px;
     }
-    .shadow, .shadow-2, .shadow-3, .shadow-4{
+    .shadow, .shadow-2, .shadow-3, .shadow-4, .shadow-5, .shadow-6, .shadow-7{
         font-size: 24px;
         display: none;
     }
 }
+
+@media only screen and (max-width : 1070px) {
+    .nav{
+            margin-right: 5px;
+        }
+
 
 @media only screen and (max-width : 1000px) {
     .wrap, .wrap-slide{
@@ -194,6 +199,9 @@
     .under-footer a{
         display: inline-block;
         float: none;
+    }
+    .header-box span{
+        font-size: 10px;
     }
 }
 

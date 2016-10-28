@@ -336,6 +336,11 @@ body{
     margin-top: 100px;
     margin-bottom: 100px;
 }
+#slick-slider-3{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+}
 
 .slick-prev{
     position: absolute;
@@ -550,7 +555,7 @@ body{
     width: 100%;
     height: inherit;
     min-height: inherit;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.7);
 }
 .art-slide img{
     display: none;
@@ -999,7 +1004,7 @@ body{
     margin-top: 150px;
     position: relative;
 }
-.partners-title h1{
+.partners-title span{
     float: left;
     width: 100%;
 
@@ -1179,38 +1184,38 @@ body{
 .shadow, .shadow-2, .shadow-3, .shadow-4, .shadow-5, .shadow-6, .shadow-7{
     position: absolute;
     color: #f9f3eb;
-    font-size: 64px;
+    font-size: 46px;
     font-weight: 900;
     font-family: "GOTHICB";
     z-index: 2;
 }
 .shadow{
-    top: -30px;
+    top: -20px;
     left: 75px;
 }
 .shadow-2{
-    top: -10px;
+    top: 10px;
     left: 140px;
 }
 .shadow-3{
-    top: -10px;
+    top: 10px;
     left: 500px;
 }
 .shadow-4{
-    top: -10px;
+    top: 10px;
     left: 160px;
 }
 .shadow-5{
-    top: 0px;
+    top: 20px;
     left: 250px;
 }
 .shadow-6{
-    top: 0px;
+    top: 20px;
     left: -50px;
     text-transform: uppercase;
 }
 .shadow-7{
-    top: -10px;
+    top: 10px;
     left: 150px;
     text-transform: uppercase;
 }
@@ -1537,25 +1542,17 @@ body{
     */
     margin-left: 3%;
     margin-right: 3%;
-    border: 1px solid #111111;
+    /*border: 1px solid #111111;*/
     position: relative;
     text-align: left;
 }
-.si-img{
-    position: absolute;
-    
-    height: 260px;
-    width: 50%;
-    left: -10%;
-    top: 25px;
-    background: url(../img/research-slider.png) center center no-repeat;
-    background-size: cover;
-    z-index: 1;
-}
-.si-box h2{
-    margin-left: 45%;
-    width: 40%;
-    margin-right: 5%;
+
+.si-title{
+    float: left''
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+    width: 60%;
     margin-top: 25px;
     margin-bottom: 25px;
     font-weight: 100;
@@ -1573,28 +1570,32 @@ body{
     background: #d2ab5e;
     z-index: 2;
 }
+.si-line{
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    top: 25px;
+    right: -75px;
+    background: #d2ab5e;
+}
 
 .si-box span{
-    margin-left: 45%;
-    width: 40%;
-    margin-right: 5%;
+    float: left;
+    margin-left: 20%;
+    width: 60%;
+    margin-right: 20%;
     margin-top: 35px;
     margin-bottom: 100px;
     font-weight: 100;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
+    text-align: center;
     color: #898989;
     position: relative;
+    cursor: pointer;
 }
-.si-line{
-    position: absolute;
-    height: 2px;
-    width: 30px;
-    top: 15px;
-    left: 130px;
-    background: #d2ab5e;
-}
+
 .sr-history{
     float: left;
     width: 100%;
@@ -1988,4 +1989,10 @@ body{
 .og.slick-active img{ 
 }
 .og.slick-current img{
+}
+
+.anchors{
+    float: left;
+    width: 100%;
+    height: 1px;
 }

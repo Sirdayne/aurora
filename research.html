@@ -132,35 +132,75 @@
                     <div class="shadow-5">МЫ ПРОВОДИМ</div>
                 </div>
                 
-                <div id="slick-slider">
+                <div id="slick-slider-3">
                     <div class="si-box">
-                        <div class="js-si si-img"></div>
 
-                        <h2>
-                            Аэромагнитная и 
-                            <br>аэрогаммспетромет-
-                            <br>рическая съемка
-
+                        <div class="si-title">
+                            КАРТИРОВАНИЕ ВОДЫ
+                            
                             <div class="sii-line"></div>
-                        </h2>
+                            <div class="si-line"></div>
+                        </div>
 
-                        <a href=""><span>ПОДРОБНЕЕ<div class="si-line"></div></span></a>
+                        <span>ПОДРОБНЕЕ</span>
 
                     </div>
+                    
                     <div class="si-box">
-                        <div class="js-si si-img"></div>
 
-                        <h2>
-                            Аэромагнитная и 
-                            <br>аэрогаммспетромет-
-                            <br>рическая съемка
+                        <div class="si-title">
+                            РАЗВЕДКА 
+                            ПОЛЕЗНЫХ ИСКОПАЕМЫХ
 
                             <div class="sii-line"></div>
-                        </h2>
+                            <div class="si-line"></div>
+                        </div>
 
-                        <a href=""><span>ПОДРОБНЕЕ<div class="si-line"></div></span></a>
+                        <span>ПОДРОБНЕЕ</span>
 
                     </div>
+                    
+                    <div class="si-box">
+
+                        <div class="si-title">
+                            АЭРОМАГНИТОРАЗВЕДКА+ 
+                            РАДИОМЕТРИЧЕСКАЯ РАЗВЕДКА
+
+                            <div class="sii-line"></div>
+                            <div class="si-line"></div>
+                        </div>
+
+                        <span>ПОДРОБНЕЕ</span>
+
+                    </div>
+                    
+                    <div class="si-box">
+
+                        <div class="si-title">
+                            ГИПЕРСПЕКТРАЛЬНОЕ 
+                            ИЗОБРАЖЕНИЕ
+                            
+                             <div class="sii-line"></div>
+                             <div class="si-line"></div>
+                        </div>
+
+                        <span>ПОДРОБНЕЕ</span>
+
+                    </div>
+                    
+                    <div class="si-box">
+
+                        <div class="si-title">
+                            LIDAR
+
+                            <div class="sii-line"></div>
+                            <div class="si-line"></div>
+                        </div>
+
+                        <span>ПОДРОБНЕЕ</span>
+
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -201,7 +241,7 @@
                     </div>
                     
                 </div>
-                
+                <a name="sc-1" class="anchors"></a>
                 <div class="rs-box">
                     
                     <div class="rs-1 js-rs"></div>
@@ -214,6 +254,8 @@
                     </h2>
                     
                 </div>
+                
+                <a name="sc-2" class="anchors"></a>
                 <div class="rs-box gold">
                     
                     <div class="rs-2 js-rs"></div>
@@ -226,6 +268,9 @@
                     </h2>
                     
                 </div>
+                
+                
+                <a name="sc-3" class="anchors"></a>
                 <div class="rs-box">
                     
                     <div class="rs-3 js-rs"></div>
@@ -239,6 +284,8 @@
                     </h2>
                     
                 </div>
+                
+                <a name="sc-4" class="anchors"></a>
                 <div class="rs-box gold">
                     
                     <div class="rs-4 js-rs"></div>
@@ -252,6 +299,8 @@
                     </h2>
                     
                 </div>
+                
+                
                 <!--
                 <div class="rs-box">
                     
@@ -266,6 +315,8 @@
                     
                 </div>
                 -->
+                
+                <a name="sc-5" class="anchors"></a>
                 <div class="rs-box gold">
                     
                     <div class="rs-6 js-rs"></div>
@@ -400,7 +451,7 @@
   
 <script src="js/slick.min.js"></script>
 <script>
-    $('#slick-slider').slick({
+    $('#slick-slider-3').slick({
         slidesToShow: 1,
         centerPadding: '0px',
         arrows: true,
@@ -489,7 +540,6 @@
    
 <script src="js/script.js"></script>
 
-
 <script type="text/javascript">
         $(document).ready(function(){ 
                 
@@ -512,7 +562,26 @@
                 
             }
             */
+            
         });
+</script>
+
+<script type="text/javascript">
+    
+    function scrollToAnchor(aid){
+        var aTag = $("a[name='"+ aid +"']");
+        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    }
+    
+    $('.si-box span').click(function() {
+        
+        
+        
+        var index = $(".si-box span").index(this);
+        
+        scrollToAnchor('sc-' + index);
+    });      
+    
 </script>
 
 </body>
