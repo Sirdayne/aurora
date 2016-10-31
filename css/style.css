@@ -648,6 +648,17 @@ body{
     color: #d2ab5e;
     font-weight: normal;
 }
+.slide-left h5{
+    float: left;
+    width: 80%;
+    margin-top: 40px;
+    margin-right: 20%;
+    font-size: 42px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "GOTHICB";
+}
 .slide-left a{
     float: left;
     margin-top: 35px;
@@ -1640,6 +1651,63 @@ body{
     background: url(../img/tr-header.png) center center no-repeat;
     background-size: cover;
 }
+.header-about{
+    float: left;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/about-header.png) center center no-repeat;
+    background-size: cover;
+}
+.about-title{
+    float: left;
+    width: 100%;
+    margin-top: 75px;
+    font-family: "GOTHIC";
+}
+.about-title p{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.ab-left, .ab-right{
+    float: left;
+    width: 50%;
+    margin-top: 75px;
+}
+.ab-left img{
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.ab-right h2{
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    font-family: "GOTHIC";
+    font-weight: 100;
+    margin: 100px 50px 0 50px;
+}
+.ab-part{
+    float: left;
+    width: 21%;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+}
+.ab-part img{
+    margin-top: 55px;
+    display: inline-block;
+    width: 100px;
+}
+.ab-part p{
+    margin-top: 25px;
+    display: inline-block;
+    width: 100%;
+}
 
 .si-box{
     float: left;
@@ -2105,6 +2173,86 @@ body{
     margin-right: 5px;
     background: #d2ab5e;
 }
+
+.wh-button{
+    display: inline-block;
+    outline: none;
+    border: 1px solid #d2ab5e;
+    padding: 10px 15px 10px 0;
+    background: #d2ab5e; 
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    font-family: "GOTHIC";
+    color: #fff;
+}
+.wh-button:hover{
+    background: #fff;
+    color: #d2ab5e;
+}
+.wh-button:hover p{
+    color: #d2ab5e;
+}
+.wh-button p{
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+.wh-line{
+    float: left;
+    height: 1px;
+    width: 15px;
+    margin-top: 7px;
+    margin-right: 5px;
+    background: #fff;
+}
+.wh-wrap{
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.team{
+    float: left;
+    border: 1px solid #d2ab5e;
+    width: 29%;
+    margin-top: 270px;
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+}
+.team-img{
+    float: left;
+    width: 100%;
+    top: -190px;
+    position: absolute;
+    text-align: center;
+}
+.team-img img{
+    display: inline-block;
+    height: 250px;
+}
+.team h1{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #3a3a39;
+    margin-top: 75px;
+    
+}
+.team h2{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #d2ab5e;
+    margin-top: 10px;
+}
+
 #form-call{
     float: left;
     width: 100%;
@@ -2323,4 +2471,171 @@ body{
     float: left;
     width: 100%;
     height: 1px;
+}
+
+
+
+.new-tags{
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+}
+.new-tag{
+    float: left;
+    margin-left: 35px;
+    font-size: 20px;
+    line-height: 24px;
+    
+    font-weight: 100;
+    font-family: "GOTHICB";
+    color: #d2ab5e;
+    cursor: pointer;
+}
+.active-tag{
+    font-family: "GOTHICB";
+    color: #000;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #000;
+}
+/* НОВОСТИ СТИЛИ */
+.new{
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.new-title{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    text-transform: uppercase;
+}
+.new-title span{
+    float: left;
+    
+    width: 100%;
+
+    font-size: 15px;
+    line-height: 35px;
+    font-weight: 900;
+    font-family: "GOTHICB";
+    color: #000;
+    
+}
+.new-title h2{
+    float: left;
+    position: relative;
+    z-index: 3;
+    width: 80%;
+    margin-left: 35px;
+
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 900;
+    font-family: "GOTHICB";
+    color: #d2ab5e;
+}
+
+.new-img, .new-text{
+    float: left;
+    width: 50%;
+}
+.new-img img{
+    float: left;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 35px; 
+}
+.new-text h1{
+    float: left;
+    width: 70%;
+    margin-top: 170px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "GOTHICB";
+}
+.new-text span{
+    float: left;
+    width: 70%;
+    margin-top: 45px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 100;
+    position: relative;
+}
+.new-button{
+    float: left;
+    margin-top: 45px;
+    margin-left: 15%;
+    outline: none;
+    border: 1px solid #d2ab5e;
+    padding: 10px 15px 10px 0;
+    background: #fff; 
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    font-family: "GOTHIC";
+}
+.new-button:hover{
+    background: #d2ab5e;
+    color: #fff;
+}
+.new-button:hover p{
+    color: #fff;
+}
+.new-button p{
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    color: #181818;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+.empty-footer{
+    float: left;
+    width: 100%;
+    height: 140px;
+}
+
+.inner{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.inner img, .inner span, .inner h1, .inner p{
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.inner img{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.inner span{
+    font-family: "GOTHICB";
+    font-weight: bold;
+    color: #cccccc;
+    text-align: left;
+}
+.inner h1{
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "GOTHICB";
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+.inner p{
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "GOTHIC";
+    color: #000;
 }
