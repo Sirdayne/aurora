@@ -555,7 +555,7 @@ body{
     width: 100%;
     height: inherit;
     min-height: inherit;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.5);
 }
 .art-slide img{
     display: none;
@@ -608,7 +608,7 @@ body{
     top: -15px;
     right: -50px;
     font-size: 35px;
-    color: rgba(58,71,89,0.5);
+    color: rgba(128,110,71,0.8);
     font-weight: bold;
     font-family: "GOTHICB";
 }
@@ -754,6 +754,17 @@ body{
     float: left;
     width: 70%;
     margin-top: 45px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 100;
+    position: relative;
+}
+.metodika-right h3{
+    float: left;
+    width: 70%;
+    margin-top: 210px;
     margin-left: 15%;
     margin-right: 15%;
     font-size: 16px;
@@ -1622,7 +1633,13 @@ body{
     background: url(../img/scout-header.png) center center no-repeat;
     background-size: cover;
 }
-
+.header-transfert{
+    float: left;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/tr-header.png) center center no-repeat;
+    background-size: cover;
+}
 
 .si-box{
     float: left;
@@ -1669,6 +1686,23 @@ body{
     background-size: cover;
 }
 
+.tr-1{
+    background: url(../img/tr-1.png) center center no-repeat;
+    background-size: cover;
+}
+.tr-2{
+    background: url(../img/tr-2.png) center center no-repeat;
+    background-size: cover;
+}
+.tr-3{
+    background: url(../img/tr-3.png) center center no-repeat;
+    background-size: cover;
+}
+.tr-4{
+    background: url(../img/tr-4.png) center center no-repeat;
+    background-size: cover;
+}
+
 .su-1{
     background: url(../img/su-1.jpg) center center no-repeat;
     background-size: cover;
@@ -1709,8 +1743,16 @@ body{
     font-weight: 100;
     font-size: 20px;
     line-height: 25px;
-    text-transform: uppercase;
     position: relative;
+}
+.si-title h2{
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 100;
+    color: #292929;
+    font-size: 14px;
 }
 .sii-line{
     position: absolute;
@@ -1724,9 +1766,9 @@ body{
 .si-line{
     position: absolute;
     height: 2px;
-    width: 50px;
+    width: 30px;
     top: 15px;
-    right: 25px;
+    left: 100px;
     background: #d2ab5e;
 }
 
@@ -1734,8 +1776,7 @@ body{
     float: left;
     margin-left: 40%;
     width: 60%;
-    margin-top: 35px;
-    margin-bottom: 100px;
+    margin-top: 25px;
     font-weight: 100;
     font-size: 15px;
     line-height: 30px;
@@ -1917,67 +1958,72 @@ body{
 .gold{
     border: 1px solid #d2ab5e;
 }
-.rs-1{
+
+.rs-1, .rs-2, .rs-3, .rs-4, .rs-5, .rs-6{
     position: absolute;
     top: -100px;
     left: 2%;
     width: 26%;
     height: 300px;
+}
+.rs-1{
     background: url(../img/res-1.png) center center no-repeat;
     background-size: cover;
 }
 .rs-2{
-    position: absolute;
-    top: -100px;
-    left: 2%;
-    width: 26%;
-    height: 300px;
     background: url(../img/res-2.png) center center no-repeat;
     background-size: cover;
 }
 .rs-3{
-    position: absolute;
-    top: -100px;
-    left: 2%;
-    width: 26%;
-    height: 300px;
     background: url(../img/res-3.png) center center no-repeat;
     background-size: cover;
 }
 .rs-4{
-    position: absolute;
-    top: -100px;
-    left: 2%;
-    width: 26%;
-    height: 300px;
     background: url(../img/res-4.png) center center no-repeat;
     background-size: cover;
 }
 .rs-5{
-    position: absolute;
-    top: -100px;
-    left: 2%;
-    width: 26%;
-    height: 300px;
+
     background: url(../img/res-5.png) center center no-repeat;
     background-size: cover;
 }
 .rs-6{
+    background: url(../img/res-6.png) center center no-repeat;
+    background-size: cover;
+}
+
+.trr-1, .trr-2, .trr-3, .trr-4{
     position: absolute;
     top: -100px;
     left: 2%;
     width: 26%;
     height: 300px;
-    background: url(../img/res-6.png) center center no-repeat;
+}
+.trr-1{
+    background: url(../img/trr-1.png) center center no-repeat;
     background-size: cover;
 }
+.trr-2{
+    background: url(../img/trr-2.png) center center no-repeat;
+    background-size: cover;
+}
+.trr-3{
+    background: url(../img/trr-3.png) center center no-repeat;
+    background-size: cover;
+}
+.trr-4{
+    background: url(../img/trr-4.png) center center no-repeat;
+    background-size: cover;
+}
+
+
 .rs-box h2{
     float: left;
     width: 70%;
     margin-left: 30%;
     font-weight: 100;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 25px;
 }
 .rs-box h1{
     position: absolute;
@@ -2063,6 +2109,66 @@ body{
     float: left;
     width: 100%;
     margin-top: 200px;
+    min-height: 250px;
+    
+    background: url(../img/zayavka.png) center center no-repeat;
+    background-size: cover;
+}
+.tr-amg{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    min-height: 250px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    
+    background: url(../img/tr-amg.png) center center no-repeat;
+    background-size: cover;
+}
+.tr-amg h1{
+    float: left;
+    width: calc(100% - 50px);
+    color: #fff;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 50px;
+    
+    font-weight: bold;
+    font-family: "GOTHICB";
+}
+.tr-part{
+    float: left;
+    width: 19%;
+    margin-right: 1%;
+}
+.tr-part h1{
+    float: left;
+    width: 10px;
+    padding: 5px 15px 7px 14.5px;
+    border: 1px solid rgba(255,255,255,0.8);
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    font-weight: 100;
+}
+.tr-part p{
+    float: left;
+    width: calc(100% - 70px);
+    margin-left: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+.tr-line{
+    float: left;
+    width: 40px;
+    height: 2px;
+    margin-right: 10px;
+    margin-top: 17px;
+    background: #957f52;
+}
+.form-call{
+    float: left;
+    width: 100%;
     min-height: 250px;
     
     background: url(../img/zayavka.png) center center no-repeat;
