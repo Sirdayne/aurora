@@ -545,7 +545,7 @@ body{
 .art-slide{
     float: left;
     width: 100%;
-    min-height: 700px;
+    min-height: calc(100vh - 103px);
     background: url(../img/slide-1.png) center center no-repeat;
     background-size: cover;
     display: none;
@@ -564,7 +564,7 @@ body{
     float: left;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 100px;
+    margin-top: 200px;
     width: 60%;
 }
 .slide-left{
@@ -574,7 +574,7 @@ body{
 .slide-right{
     position: absolute;
     right: 20%;
-    top: 100px;
+    top: 200px;
     width: 35%;
 }
 .slide-bottom{
@@ -627,7 +627,7 @@ body{
 .slide-left h1, .slide-left h2{
     float: left;
     width: 100%;
-    font-size: 54px;
+    font-size: 70px;
     line-height: 70px;
     text-transform: uppercase;
     font-weight: 600;
@@ -644,7 +644,7 @@ body{
     width: 80%;
     margin-top: 35px;
     margin-right: 20%;
-    font-size: 18px;
+    font-size: 24px;
     color: #d2ab5e;
     font-weight: normal;
 }
@@ -698,7 +698,7 @@ body{
     float: left;
     width: 50%;
     margin-left: 50%;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 100;
     color: #d2ab5e;
     text-align: right;
@@ -708,7 +708,7 @@ body{
     width: 50%;
     margin-left: 50%;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
     font-weight: normal;
     text-align: right;
@@ -722,6 +722,73 @@ body{
     width: 100%;
     background: #fff;
 }
+.metodika{
+    float: left;
+    width: 100%;
+    background: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.metodika-left, .metodika-right{
+    float: left;
+    width: 50%;
+}
+.metodika-left img{
+    float: left;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 35px; 
+}
+.metodika-right h1{
+    float: left;
+    width: 70%;
+    margin-top: 170px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "GOTHICB";
+}
+.metodika-right h4{
+    float: left;
+    width: 70%;
+    margin-top: 45px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 100;
+    position: relative;
+}
+.metodika-button{
+    float: left;
+    margin-top: 45px;
+    margin-left: 15%;
+    outline: none;
+    border: 1px solid #d2ab5e;
+    padding: 10px 15px 10px 0;
+    background: #fff; 
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    font-family: "GOTHIC";
+}
+.metodika-button:hover{
+    background: #d2ab5e;
+    color: #fff;
+}
+.metodika-button:hover p{
+    color: #fff;
+}
+.metodika-button p{
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    color: #181818;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
 .after-title{
     float: left;
     position: relative;
@@ -1354,8 +1421,8 @@ body{
 .sr-left h1, .sr-left h2{
     float: left;
     width: 100%;
-    font-size: 42px;
-    line-height: 42px;
+    font-size: 52px;
+    line-height: 52px;
     font-weight: 600;
     font-family: "GOTHICB";
 }
@@ -1374,7 +1441,7 @@ body{
 .sr-block h2, .sr-box h2{
     float: left;
     margin: 35px 35px 15px 35px;
-    font-size: 16px;
+    font-size: 20px;
     color: #292929;
     font-weight: 100;
 }
@@ -1665,16 +1732,15 @@ body{
 
 .si-box span{
     float: left;
-    margin-left: 20%;
+    margin-left: 40%;
     width: 60%;
-    margin-right: 20%;
     margin-top: 35px;
     margin-bottom: 100px;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     color: #898989;
     position: relative;
     cursor: pointer;
@@ -1697,7 +1763,7 @@ body{
 }
 .sc-box{
     position: absolute;
-    width: 16%;
+    width: 18%;
     height: auto;
     padding: 25px 35px;
     border: 1px solid #c0c0c0;
@@ -1785,7 +1851,7 @@ body{
 }
 
 .sc-1{
-    top: 250px;
+    top: 200px;
     left: 0;
     z-index: 2;
 }
@@ -1795,7 +1861,7 @@ body{
     z-index: 4;
 }
 .sc-3{
-    top: 250px;
+    top: 200px;
     left: 30%;
     z-index: 8;
 }
@@ -1805,16 +1871,16 @@ body{
     z-index: 10;
 }
 .sc-5{
-    top: 250px;
+    top: 200px;
     left: 60%;
     z-index: 12;
 }
-
 .sc-6{
     top: 50px;
     left: 75%;
     z-index: 14;
 }
+
 .z-1{
     z-index: 1;
 }
@@ -2107,15 +2173,15 @@ body{
     height: 800px;
 }
 .mt-180{
-    margin-top: 220px;
+    margin-top: 320px;
 }
 
 .og{
     float: left;
     margin-left: 25px;
     margin-right: 25px;
-    height: 200px;
-    width: 400px;
+    height: 240px;
+    width: 300px;
     
     -webkit-transition: .3s linear;
     transition: .3s linear;

@@ -8,11 +8,40 @@
         height: 85%;
         padding-top: 15%;
     }
+    .slide-left h1, .slide-left h2{
+        font-size: 54px;
+        line-height: 70px;
+    }
+    .slide-left h3{
+        margin-top: 35px;
+        font-size: 18px;
+    }
+    .slide-right h1{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .slide-right h2{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .wrap-slide{
+        margin-top: 100px;
+    }
+    .slide-right{
+        top: 100px;
+    }
+    .mt-180{
+        margin-top: 220px;
+    }
+    .sr-left h1, .sr-left h2{
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .sr-block h2, .sr-box h2{
+        font-size: 16px;
+        font-weight: 100;
+    }
 }
-@media only screen and (max-height : 1000px) {
-    
-}
-
 @media only screen and (max-height : 700px) {
 	.sr-left, .sr-right{
         height: 85%;
@@ -45,7 +74,45 @@
         margin-left: 30%;
     }
 }
-
+@media only screen and (max-width : 1700px) {
+    .sr-left, .sr-right{
+        height: 85%;
+        padding-top: 15%;
+    }
+    .slide-left h1, .slide-left h2{
+        font-size: 54px;
+        line-height: 70px;
+    }
+    .slide-left h3{
+        margin-top: 35px;
+        font-size: 18px;
+    }
+    .slide-right h1{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .slide-right h2{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .wrap-slide{
+        margin-top: 100px;
+    }
+    .slide-right{
+        top: 100px;
+    }
+    .mt-180{
+        margin-top: 220px;
+    }
+    .sr-left h1, .sr-left h2{
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .sr-block h2, .sr-box h2{
+        font-size: 16px;
+        font-weight: 100;
+    }
+}
 
 @media only screen and (max-width : 1550px) {
     .nav{
@@ -64,6 +131,9 @@
     .slide-left h1, .slide-left h2{
         font-size: 32px;
         line-height: 34px;
+    }
+    .sc-1, .sc-3, .sc-5{
+        top: 300px;
     }
 }
 @media only screen and (max-width : 1250px) {
@@ -265,6 +335,9 @@
     }
     .slide-num{
         top: 4px;
+    }
+    .sc-1, .sc-3, .sc-5{
+        top: 300px;
     }
 }
 
