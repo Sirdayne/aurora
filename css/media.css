@@ -3,7 +3,7 @@
     
 }
 
-@media only screen and (max-height : 1000px) {
+@media only screen and (max-height : 1100px) {
    .sr-left, .sr-right{
         height: 85%;
         padding-top: 15%;
@@ -12,9 +12,18 @@
         font-size: 54px;
         line-height: 70px;
     }
+    .slide-left h5{
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 0;
+    }
+    .slide-left button{
+        margin-top: 35px;
+    }
     .slide-left h3{
         margin-top: 35px;
         font-size: 18px;
+        line-height: 24px;
     }
     .slide-right h1{
         font-size: 16px;
@@ -73,6 +82,19 @@
         width: 70%;
         margin-left: 30%;
     }
+    .slide-left h5{
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 0;
+    }
+    .slide-left button{
+        margin-top: 35px;
+    }
+    .slide-left h3{
+        margin-top: 35px;
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 @media only screen and (max-width : 1700px) {
     .sr-left, .sr-right{
@@ -86,6 +108,7 @@
     .slide-left h3{
         margin-top: 35px;
         font-size: 18px;
+        line-height: 24px;
     }
     .slide-right h1{
         font-size: 16px;
@@ -276,6 +299,11 @@
 }
 
 @media only screen and (max-width : 800px) {
+    .mb-right{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
     .ser-icon{
         width: 100%;
         margin-top: 25px;

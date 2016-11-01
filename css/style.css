@@ -398,6 +398,102 @@ body{
     padding-bottom: 15px;
     position: relative;
 }
+#team-navigation{
+    float: left;
+    width: 100%;
+    background: #181818;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.member{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+.mb-left{
+    float: left;
+    position: relative;
+    width: 320px;
+    margin-top: 50px;
+    border: 1px solid #181818;
+    height: 450px;
+}
+.mb-1, .mb-2, .mb-3, .mb-4, .mb-5{
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    height: 370px;
+    width: 290px;
+}
+.mb-1{
+    background: url(../img/abo-1.png) center center no-repeat;
+    background-size: cover;
+}
+.mb-2{
+    background: url(../img/abo-2.png) center center no-repeat;
+    background-size: cover;
+}
+.mb-3{
+    background: url(../img/abo-3.png) center center no-repeat;
+    background-size: cover;
+}
+.mb-4{
+    background: url(../img/abo-4.png) center center no-repeat;
+    background-size: cover;
+}
+.mb-5{
+    background: url(../img/abo-5.png) center center no-repeat;
+    background-size: cover;
+}
+.mb-fb{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #d2ab5e;
+    cursor: pointer;
+    bottom: -25px;
+    left: 50px;
+}
+.mb-fb img{
+    float: left;
+    width: 13px;
+    margin-left: 17px;
+    margin-top: 14px;
+}
+.mb-ml{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #d2ab5e;
+    cursor: pointer;
+    bottom: -25px;
+    left: 110px;
+}
+.mb-ml img{
+    float: left;
+    width: 22px;
+    margin-left: 14px;
+    margin-top: 16px;
+}
+
+.mb-right{
+    float: left;
+    width: calc(90% - 350px);
+    margin-left: 10%;
+    margin-top: 50px;
+}
+.mb-right h1{
+    float: left;
+    width: 100%;
+
+}
+.mb-right p{
+    float: left;
+    width: 100%;
+    margin-top: 35px;
+}
 #full-navigation{
     position: fixed;
     top: 0;
@@ -627,8 +723,8 @@ body{
 .slide-left h1, .slide-left h2{
     float: left;
     width: 100%;
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 80px;
+    line-height: 90px;
     text-transform: uppercase;
     font-weight: 600;
     font-family: "GOTHICB";
@@ -644,7 +740,8 @@ body{
     width: 80%;
     margin-top: 35px;
     margin-right: 20%;
-    font-size: 24px;
+    font-size: 28px;
+    line-height: 40px;
     color: #d2ab5e;
     font-weight: normal;
 }
@@ -652,9 +749,10 @@ body{
     float: left;
     width: 80%;
     margin-top: 40px;
+    margin-bottom: 50px;
     margin-right: 20%;
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 50px;
+    line-height: 52px;
     color: #fff;
     font-weight: bold;
     font-family: "GOTHICB";
@@ -671,7 +769,7 @@ body{
 }
 .slide-left button{
     float: left;
-    margin-top: 35px;
+    margin-top: 75px;
     margin-bottom: 150px;
     color: #fff;
     padding: 15px 35px 15px 0;
@@ -953,11 +1051,14 @@ body{
     border: 1px solid #111;
     padding: 50px;
 }
-.service-consult img{
+.service-consult-img{
     position: absolute;
     width: 40%;
     left: 10%;
-    top: -50px;
+    top: -70px;
+    
+    background: url(../img/people.png) center center no-repeat;
+    background-size: cover;
 }
 
 .service-consult h4{
@@ -1651,6 +1752,13 @@ body{
     background: url(../img/tr-header.png) center center no-repeat;
     background-size: cover;
 }
+.header-job{
+    float: left;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/j-header.png) center center no-repeat;
+    background-size: cover;
+}
 .header-about{
     float: left;
     width: 100%;
@@ -1771,6 +1879,19 @@ body{
     background-size: cover;
 }
 
+.pc-1{
+    background: url(../img/pc-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.pc-2{
+    background: url(../img/pc-2.jpg) center center no-repeat;
+    background-size: cover;
+}
+.pc-3{
+    background: url(../img/pc-3.jpg) center center no-repeat;
+    background-size: cover;
+}
+
 .su-1{
     background: url(../img/su-1.jpg) center center no-repeat;
     background-size: cover;
@@ -1821,6 +1942,17 @@ body{
     font-weight: 100;
     color: #292929;
     font-size: 14px;
+}
+.si-title h3{
+    float: left;
+    width: 90%;
+    margin-left: 10%;
+    text-align: left;
+    font-weight: 100;
+    color: #292929;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .sii-line{
     position: absolute;
@@ -2060,7 +2192,7 @@ body{
     background-size: cover;
 }
 
-.trr-1, .trr-2, .trr-3, .trr-4{
+.trr-1, .trr-2, .trr-3, .trr-4, .pcc-1, .pcc-2, .pcc-3{
     position: absolute;
     top: -100px;
     left: 2%;
@@ -2083,6 +2215,18 @@ body{
     background: url(../img/trr-4.png) center center no-repeat;
     background-size: cover;
 }
+.pcc-1{
+    background: url(../img/pcc-1.JPG) center center no-repeat;
+    background-size: cover;
+}
+.pcc-2{
+    background: url(../img/pcc-2.jpg) center center no-repeat;
+    background-size: cover;
+}
+.pcc-3{
+    background: url(../img/pcc-3.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 
 .rs-box h2{
@@ -2097,6 +2241,16 @@ body{
     position: absolute;
     font-size: 24px;
     line-height: 24px;
+    font-weight: 600;
+    font-family: "GOTHICB";
+    top: -70px;
+    left: 31%;
+    text-transform: uppercase;
+}
+.rs-box h3{
+    position: absolute;
+    font-size: 13px;
+    line-height: 15px;
     font-weight: 600;
     font-family: "GOTHICB";
     top: -70px;
@@ -2300,6 +2454,29 @@ body{
     font-weight: 100;
 }
 .tr-part p{
+    float: left;
+    width: calc(100% - 70px);
+    margin-left: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.tr-pax{
+    float: left;
+    width: 24%;
+    margin-right: 1%;
+}
+.tr-pax h1{
+    float: left;
+    width: 10px;
+    padding: 5px 15px 7px 14.5px;
+    border: 1px solid rgba(255,255,255,0.8);
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    font-weight: 100;
+}
+.tr-pax p{
     float: left;
     width: calc(100% - 70px);
     margin-left: 20px;

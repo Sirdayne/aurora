@@ -5,8 +5,8 @@ $(document).ready(function(){
      ******************************/
     
     var imgHeight = $('.service-consult').height();
-    imgHeight = imgHeight + 200;
-    $('.service-consult img').css('height', imgHeight + 'px');
+    imgHeight = imgHeight + 250;
+    $('.service-consult-img').css('height', imgHeight + 'px');
 
     // declare variable
     var scrollTop = $(".scrollTop");
