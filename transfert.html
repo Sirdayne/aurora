@@ -116,7 +116,7 @@
                     <a href="transfert.html"><div class="slide-nav slide-nav-act"></div></a>
                     <a href="research.html"><div class="slide-nav"></div></a>
                     <a href="scout.html"><div class="slide-nav"></div></a>
-                    <a href=""><div class="slide-nav"></div></a>
+                    <a href="business.html"><div class="slide-nav"></div></a>
                     <a href="job.html"><div class="slide-nav"></div></a>
                     
                 <div class="slide-num"><div class="nm-line"></div>01</div>
@@ -531,13 +531,15 @@
 <script type="text/javascript">
         $(document).ready(function(){ 
                 
-            for (var i = 0; i < 7; i++) {
-                
-                var rsHeight = $('.rs-box').eq( i ).height();
-                rsHeight = rsHeight + 182;
-                
-                $('.js-rs').eq( i ).css('height', rsHeight + 'px');
-                
+            if ($(window).width() > 800) {
+                for (var i = 0; i < 7; i++) {
+
+                    var rsHeight = $('.rs-box').eq( i ).height();
+                    rsHeight = rsHeight + 182;
+
+                    $('.js-rs').eq( i ).css('height', rsHeight + 'px');
+
+            }
             }
             
             /*

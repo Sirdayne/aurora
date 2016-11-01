@@ -4,9 +4,11 @@ $(document).ready(function(){
      BOTTOM SCROLL TOP BUTTON
      ******************************/
     
-    var imgHeight = $('.service-consult').height();
-    imgHeight = imgHeight + 250;
-    $('.service-consult-img').css('height', imgHeight + 'px');
+    if ($(window).width() > 800) {
+        var imgHeight = $('.service-consult').height();
+        imgHeight = imgHeight + 250;
+        $('.service-consult-img').css('height', imgHeight + 'px');
+    }
 
     // declare variable
     var scrollTop = $(".scrollTop");

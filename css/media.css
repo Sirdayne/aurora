@@ -162,11 +162,10 @@
 @media only screen and (max-width : 1250px) {
     .nav{
             margin-right: 15px;
-        }
+    }
     .header-box span{
         font-size: 14px;
     }
-}
 }
 @media only screen and (max-width : 1200px) {
     .exp-val-1, .exp-val-2, .exp-val-3{
@@ -188,17 +187,16 @@
     .slick-next{
         right: 50px;
     }
-    .shadow, .shadow-2, .shadow-3, .shadow-4, .shadow-5, .shadow-6, .shadow-7{
-        font-size: 24px;
+    .shadow, .shadow-2, .shadow-3, .shadow-4, .shadow-5, .shadow-6, .shadow-7, .shadow-8, .shadow-9{
         display: none;
     }
 }
 
 @media only screen and (max-width : 1070px) {
     .nav{
-            margin-right: 5px;
-        }
-
+        margin-right: 5px;
+    }
+}
 
 @media only screen and (max-width : 1000px) {
     .wrap, .wrap-slide{
@@ -240,7 +238,6 @@
         text-align: center;
         line-height: 50px;
     }
-    
     .nav-lang{
         display: none;
     }
@@ -299,6 +296,175 @@
 }
 
 @media only screen and (max-width : 800px) {
+    .sc-box{
+        width: 60%;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 14px;
+        
+    }
+    .sc-box h1{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .sc-1{
+        top: 0px;
+        left: 0;
+    }
+    .sc-2{
+        top: 120px;
+        left: 40%;
+    }
+    .sc-3{
+        top: 240px;
+        left: 0%;
+    }
+    .sc-4{
+        top: 360px;
+        left: 40%;
+    }
+    .sc-5{
+        top: 480px;
+        left: 0%;
+    }
+    .sc-6{
+        top: 600px;
+        left: 40%;
+    }
+    
+    .hs-box{
+        width: 60%;
+    }
+    .hs-box h2{
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .t-1{
+        top: 25px;
+    }
+    .t-2{
+        top: 225px;
+        left: 10%;
+    }
+    .t-3{
+        top: 475px;
+        left: 15%;
+    }
+    .rs-1, .rs-2, .rs-3, .rs-4, .rs-5, .rs-6{
+        top: -50px;
+        left: 5%;
+        width: 90%;
+        height: 250px;
+    }
+    .trr-1, .trr-2, .trr-3, .trr-4, .pcc-1, .pcc-2, .pcc-3, .uii-1, .uii-2, .uii-3{
+        top: -50px;
+        left: 5%;
+        width: 90%;
+        height: 250px;
+    }
+    .rs-box h3{
+        width: 80%;
+        left: 7%;
+        font-size: 12px;
+        line-height: 12px;
+        top: 210px;
+    }
+    .rs-box h2{
+        margin-top: 250px;
+        margin-bottom: 50px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .rs-box h1{
+        top: 230px;
+        left: 7%;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .fix-box h2{
+        margin-top: 285px;
+    }
+    .rs-button, .gold-button{
+        top: auto;
+        bottom: 10px;
+        right: auto;
+        left: 5%;
+    }
+    .tr-amg{
+        margin-top: 25px;
+    }
+    .metodika-left, .metodika-right{
+        width: 100%;
+        margin: 0;
+    }
+    .metodika-right h3{
+        margin: 15px 5px;
+    }
+    .metodika-left img{
+        margin: 15px 5px;
+    }
+    .tr-part, .tr-pax, .tr-paxt{
+        width: 99%;
+        margin-top: 5px;
+    }
+    #slick-slider-3{
+        margin-top: 250px;
+    }
+    .si-title{
+        margin-top: 125px;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        font-size: 14px;
+    }
+    .si-title h3{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .si-box h2{
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .si-box span{
+        margin-top: 5px;
+    }
+    .si-img{
+        top: -150px;
+        left: 5%;
+        width: 90%;
+    }
+    .form-call, #form-call{
+        background: url(../img/zayavka-mob.png) center center no-repeat;
+        background-size: cover;
+    }
+    .form-left, .form-right{
+        width: 90%;
+        margin: 50px 5%;
+    }
+    .form-left h2{
+        margin-top: 30px;
+    }
+    
+    .team{
+        width: 96%;
+    }
+    .ab-part{
+        width: 46%;
+    }
+    .ab-left, .ab-right{
+        width: 100%;
+        margin: 0;
+    }
+    .ab-left{
+        margin-top: 50px;
+    }
+    .ab-right h2{
+        margin: 50px 5px;
+    }
     .mb-right{
         width: 100%;
         margin-left: 0;
@@ -364,9 +530,6 @@
     .slide-num{
         top: 4px;
     }
-    .sc-1, .sc-3, .sc-5{
-        top: 300px;
-    }
     .new-text, .new-img{
         width: 100%;
     }
@@ -385,7 +548,7 @@
     .slide-nav{
         width: 40px;
         height: 40px;
-        margin-right: 10%;
+        margin-right: 5%;
     }
     .slide-num{
         top: -4px;
@@ -408,9 +571,12 @@
     .slide-nav{
         width: 30px;
         height: 30px;
-        margin-right: 10%;
+        margin-right: 2%;
     }
     .slide-num{
         top: -8px;
+    }
+    .ab-part{
+        width: 96%;
     }
 }
