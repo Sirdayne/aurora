@@ -73,6 +73,10 @@ body{
     float: left;
     width: 98%;
 }
+.gl-wrapper{
+    float: left;
+    width: 100%;
+}
 .modal-button{
     display: block;
     margin: auto;
@@ -134,7 +138,7 @@ body{
     font-weight: 100;
     font-size: 17px;
     line-height: 17px;
-    font-family: "GOTHICB";
+    font-family: "GOTHIC";
     font-weight: 900;
 }
 .modal-line{
@@ -562,6 +566,135 @@ body{
     padding-bottom: 15px;
     position: relative;
 }
+
+.gallery{
+    float: left;
+    width: 100%;
+    margin-bottom: 150px;
+}
+.gallery-box{
+    float: left;
+    
+    width: 43%;
+    height: 300px;
+    
+    margin-top: 50px;
+    margin-right: 6%;
+    margin-left: 0;
+   
+    border: 1px solid #181818;
+    position: relative;
+}
+.gl-img{
+    position: absolute;
+    top: 25px;
+    right: 50%;
+    
+    width: 60%;
+    height: 250px;
+    
+    background: #d2ab5e;
+    /*background: #fff;*/
+    overflow: hidden;
+}
+.gl-img img, .al-img img, .album-img img{
+    float: left;
+    height: 100%;
+}
+.gallery-box h1{
+    float: left;
+    
+    width: 40%;
+    
+    margin-top: 50px;
+    margin-right: 5%;
+    margin-left: 55%;
+     
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: "GOTHIC";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #181818;
+}
+.gallery-box span{
+    float: left;
+    
+    width: 40%;
+    
+    margin-top: 25px;
+    margin-right: 5%;
+    margin-left: 55%;
+     
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 100;
+    font-family: "GOTHIC";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #898989;
+    
+    position: relative;
+}
+.gl-line{
+    position: absolute;
+    height: 2px;
+    width: 25px;
+    
+    top: 7px;
+    left: 120px;
+    
+    background: #d2ab5e;
+}
+.album{
+    float: left;
+    
+    width: 80%;
+    padding: 50px 5% 75px;
+    height: auto;
+    
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    border: 1px solid #181818;
+}
+.album-title{
+    float: left;
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+}
+.album-title h1{
+    float: left;
+    width: 50%;
+    margin-left: 20%;
+    text-transform: uppercase;
+}
+.album-img{
+    position: absolute;
+    top: 0;
+    left: -15%;
+    
+    height: 200px;
+    width: 31%;
+    
+    background: #d2ab5e;
+    
+}
+.al-img{
+    float: left;
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 25px;
+    height: 200px;
+    
+    background: #d2ab5e;
+}
+
+
 .member{
     float: left;
     width: 100%;
@@ -807,7 +940,7 @@ body{
     width: 100%;
     height: inherit;
     min-height: inherit;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
 }
 .art-slide img{
     display: none;
@@ -2604,7 +2737,7 @@ body{
     float: left;
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     color: #d2ab5e;
     margin-top: 10px;
 }
@@ -2906,8 +3039,8 @@ body{
 .new{
     float: left;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 .new-title{
     float: left;
@@ -3227,4 +3360,109 @@ body{
     top: 8px;
     
     background: #d2ab5e;
+}
+
+.contacts{
+    float: left;
+    width: 100%;
+}
+.contact{
+    float: left;
+    width: 50%;
+    margin-top: 75px;
+}
+.conpart{
+    float: left;
+    width: 50%;
+    margin-top: 75px;
+}
+.con-r{
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+}
+.con-r img{
+    float: left;
+    height: 38px;
+    width: 38px;
+    margin-right: 25px;
+    margin-left: 35px;
+}
+.con-r{
+    float: left;
+    font-size: 15px;
+    line-height: 38px;
+}
+.contact input{
+    float: left;
+    margin-top: 25px;
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a3a3a3;
+    font-family: "GOTHIC";
+    background: rgba(0,0,0,0);
+    color: #323232;
+}
+.contact input:focus{
+    color: #b8b8b8;
+    border-bottom: 1px solid #323232;
+}
+.contact h2{
+    float: left;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: center;
+    
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 14px;
+}
+.contact span{
+    float: left;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 50%;
+    margin-left: 7%;
+    margin-right: 43%;
+    
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 17px;
+    font-family: "GOTHIC";
+    font-weight: 900;
+}
+
+.contact textarea{
+    float: left;
+    margin-top: 35px;
+    width: 86%;
+    max-width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+    
+    height: 110px;
+    max-height: 110px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #a3a3a3;
+    font-family: "GOTHIC";
+    background: rgba(0,0,0,0);
+    color: #323232;
+}
+.contact textarea:focus{
+    color: #b8b8b8;
+    border: 1px solid #323232;
+}
+.flr{
+    float: right;
+    margin-right: 6%;
 }
