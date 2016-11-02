@@ -67,6 +67,12 @@
 
 /* mobile WIDTH fixes */
 @media only screen and (max-width : 2000px) {
+    .modal{
+        top: 50px;
+    }
+    .modal-border{
+        top: 75px;
+    }
     .wrap, .wrap-slide{
         margin-left: 10%;
         margin-right: 10%;
@@ -218,6 +224,21 @@
     }
     .slide-right{
         right: 2%;
+    }
+    .modal{
+        width: 80%;
+        left: 10%;
+        top: 0;
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+    .modal-border{
+        width: 80%;
+        left: calc(10% + 15px);
+        top: 25px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        display: none;
     }
 }
 

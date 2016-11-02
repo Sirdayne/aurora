@@ -11,9 +11,8 @@ $(document).ready(function() {
 
 		}).done(function() {
             
-            
             $('.modal').fadeOut('fast');
-            $('.modal-back-1').fadeIn('fast');
+            $('.modal-back').fadeIn('fast');
             $('.thx').fadeIn('fast');
             
             //yaCounter39717215.reachGoal('send');
