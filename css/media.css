@@ -168,6 +168,10 @@
     }
 }
 @media only screen and (max-width : 1200px) {
+    .vcc-button{
+        float: left;
+        margin-left: 7%;
+    }
     .exp-val-1, .exp-val-2, .exp-val-3{
         font-size: 50px;
         top: 0;
@@ -296,6 +300,14 @@
 }
 
 @media only screen and (max-width : 800px) {
+    .vacancy{
+        width: 80%;
+        left: 5%;
+    }
+    .vac-border{
+        width: 80%;
+        left: calc(5% + 20px);
+    }
     .sc-box{
         width: 60%;
         font-size: 12px;
@@ -564,6 +576,14 @@
 }
 
 @media only screen and (max-width : 450px) { 
+    .vacancy{
+        width: 90%;
+        left: 0;
+    }
+    .vac-border{
+        width: 80%;
+        left: 25px;
+    }
     .slide-left h1, .slide-left h2{
         font-size: 24px;
         line-height: 26px;

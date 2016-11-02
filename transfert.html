@@ -486,11 +486,11 @@
         {
           breakpoint: 1200,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
           }
         },
         {
-          breakpoint: 1000,
+          breakpoint: 800,
           settings: {
             slidesToShow: 1,
           }
@@ -535,23 +535,12 @@
                 for (var i = 0; i < 7; i++) {
 
                     var rsHeight = $('.rs-box').eq( i ).height();
-                    rsHeight = rsHeight + 182;
+                    rsHeight = rsHeight + 202;
 
                     $('.js-rs').eq( i ).css('height', rsHeight + 'px');
 
+                }
             }
-            }
-            
-            /*
-            for (var j = 0; j < 3; j++) {
-                
-                var siHeight = $('.si-box').eq( j ).height();
-                siHeight = siHeight - 50;
-                
-                $('.js-si').eq( j ).css('height', siHeight + 'px');
-                
-            }
-            */
             
         });
 </script>
@@ -564,8 +553,6 @@
     }
     
     $('.si-box span').click(function() {
-        
-        
         
         var index = $(".si-box span").index(this);
         

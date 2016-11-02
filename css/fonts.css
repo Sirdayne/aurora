@@ -10,6 +10,12 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "9320";
+    src: url("../fonts/8402.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 /*
 @font-face {
     font-family: "LucidaSansUnicode";
