@@ -255,6 +255,14 @@
 }
 
 @media only screen and (max-width : 950px) {
+    .nav-logo{
+        width: 60px;
+        height: 40px;
+    }
+    #navigation, #team-navigation, #res-navigation, #full-navigation{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
     .sr-block h2, .sr-box h2{
         font-size: 14px;
     }
@@ -420,6 +428,9 @@
         width: 100%;
         position: static;
         float: left;
+    }
+    .h-over{
+        display: none;
     }
     .header-box span{
         top: 5%;

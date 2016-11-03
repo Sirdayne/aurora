@@ -917,11 +917,11 @@ body{
     display: none;
 }
 .mob-left{
-    height: 70px;
+    height: 40px;
 }
 .burger{
     float: left;
-    height: 70px;
+    height: 40px;
     width: 70px;
     margin-left: 5px;
     position: relative;
@@ -933,7 +933,7 @@ body{
 	-ms-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
     transform: rotate(45deg);
-    top: 40px;
+    top: 15px;
 }
 .bur-act .burger-line-3{
     -webkit-transform: rotate(-45deg);
@@ -941,25 +941,25 @@ body{
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top: 40px;
+    top: 15px;
 }
 .burger-line-1, .burger-line-2, .burger-line-3{
     position: absolute;
     background: #fff;
     left: 10%;
-    width: 80%;
+    width: 50%;
     height: 4px;
     -webkit-transition: .3s linear;
     transition: .3s linear;
 }
 .burger-line-1{
-    top: 25px;
+    top: 10px;
 }
 .burger-line-2{
-    top: 40px;
+    top: 20px;
 }
 .burger-line-3{
-    top: 55px;
+    top: 30px;
 }
 .mob-right p, .mob-right h2{
     float: left;
@@ -969,7 +969,7 @@ body{
     text-align: right;
 }
 .mob-right p{
-    margin-top: 25px;
+    margin-top: 5px;
     font-size: 10px;
 }
 .mob-right h2{
@@ -1813,6 +1813,7 @@ body{
     z-index: 2;
     -webkit-transition: .3s linear;
     transition: .3s linear;
+    z-index: 2;
 }
 .header-box:hover .h-over{
     opacity: 0;
