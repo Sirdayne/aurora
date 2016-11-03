@@ -78,7 +78,17 @@
                 
                 <div class="nav-center">
                     <a href="index.html"><div class="nav nav-active">ГЛАВНАЯ</div></a>
-                    <a href="about.html"><div class="nav">КОМПАНИЯ</div></a>
+                    
+                    <div class="nav nav-company">
+                        КОМПАНИЯ
+                        <div class="nav-vacancy">
+                            <div class="nav-vac">КОМПАНИЯ</div>
+                            <a href="about.html"><div class="nav-com">О КОМПАНИИ</div></a>
+                            <a href="vacancy.html"><div class="nav-com">ВАКАНСИИ</div></a>
+                        </div>
+                        <div class="nav-border"></div>
+                    </div>
+                    
                     <a href="service.html"><div class="nav">УСЛУГИ</div></a>
                     <a href="news.html"><div class="nav">НОВОСТИ</div></a>
                     <a href="gallery.html"><div class="nav">ГАЛЕРЕЯ</div></a>
@@ -93,9 +103,12 @@
         </section>
         
         <header id="header">
-        <!-- ФИКСИРОВАННАЯ НОВОСТЬ -->
-           <div class="header-slide">
+        
+        
+        <!-- ВЫВОД НОВОСТИ ТУТ -->
+           <div class="header-slide art-slide">
                 <div class="art-back">
+                  <img src="./img/slide-1.png" alt="">
                    <div class="wrap-slide">
                        <div class="slide-left">
                             <h1>SkyTEM в Казахстане: </h1>
@@ -109,14 +122,14 @@
                    </div>
                </div>
            </div>
-           <!-- ВЫВОД НОВОСТИ ТУТ -->
+           
            <div class="art-slide">
                 <div class="art-back">
                     <img src="./img/art-1.jpg" alt="">
                     <div class="wrap-slide">
                        <div class="slide-left">
-                            <h1>САИД СУЛТАНОВ</h1>
-                            <h2>Саид Султанов</h2> 
+                            <h1>Заголовок новостей</h1>
+                            <h2>Подзаголовок новостей</h2> 
                             <h3>Саид Султанов: «Период низких цен на сырье –это идеальное время для геологоразведки».</h3>
                             <a href="">
                                 <div class="sl-line"></div>
@@ -132,7 +145,7 @@
                   <img src="./img/art-2.jpg" alt="">
                    <div class="wrap-slide">
                        <div class="slide-left">
-                            <h1>Аэрогеофизические исследования</h1>
+                            <h1>Заголовок</h1>
                             <h2>Аэрогеофизические исследования</h2> 
                             <h3>Аэрогеофизические исследования Aurora Minerals Group [VOX POPULI].</h3>
                             <a href="">
@@ -161,25 +174,12 @@
                </div>
            </div>
            
-           <div class="art-slide">
-                <div class="art-back">
-                  <img src="./img/art-4.jpg" alt="">
-                   <div class="wrap-slide">
-                       <div class="slide-left">
-                            <h1>История успеха</h1>
-                            <h2>История успеха</h2> 
-                            <h3>История успеха в продвижении разведочных работ в поиске месторождений полезных ископаемых.</h3>
-                            <a href="">
-                                <div class="sl-line"></div>
-                                <h4>ЧИТАТЬ ДАЛЕЕ</h4>
-                            </a>
-                       </div>
-                   </div>
-               </div>
-           </div>
-           
            <!-- НАЗВАНИЯ НОВОСТЕЙ СПРАВА -->
            <div class="slide-right">
+                      <div class="article">
+                           <h1>SkyTEM в Казахстане:</h1>
+                           <h2>Уникальные аэрогеофизические технологии поиска твердых полезных ископаемых и подземных вод впервые применены на территории нашей страны.</h2>
+                       </div>
                        <div class="article">
                            <h1>Заголовок новостей</h1>
                            <h2>Саид Султанов: «Период низких цен на сырье –это идеальное время для геологоразведки»</h2>
@@ -191,22 +191,17 @@
                        <div class="article">
                            <h1>Заголовок новостей</h1>
                            <h2>Аэрогеофизические исследования Северо-Казахстанской области</h2>
-                       </div>
-                       <div class="article">
-                           <h1>Заголовок новостей</h1>
-                           <h2>История успеха в продвижении разведочных работ в поиске месторождений полезных ископаемых</h2>
-                       </div>
-                       
+                       </div> 
             </div>
             
             <!-- ЮЗЛЕССНАЯ НАВИГАЦИЯ -->
             <div class="slide-bottom">
-                    <div class="slide-nav"></div>
+                    <div class="slide-nav sd-nav-act"></div>
                     <div class="slide-nav"></div>
                     <div class="slide-nav"></div>
                     <div class="slide-nav"></div>
                     
-                <div class="slide-num"><div class="nm-line"></div><span class="static">0</span><span class="dynamic">0</span></div>
+                <div class="slide-num"><div class="nm-line"></div><span class="static">0</span><span class="dynamic">1</span></div>
             </div>
             
             
@@ -521,6 +516,8 @@
                 
                 $('.art-slide').hide();
                 
+                console.log( index );
+                
                 var imgSrc = $('.art-slide img').eq( index ).attr('src');
                 
                 $('.art-slide').eq( index ).css('background', 'url(' + imgSrc + ')  center center no-repeat');
@@ -529,6 +526,9 @@
                 $('.art-slide').eq( index ).show();
                 
                 $('.dynamic').html( index+1 );
+                
+                $('.slide-nav').removeClass('sd-nav-act');
+                $('.slide-nav').eq( index ).addClass('sd-nav-act');
             /*
             },function(){
                 
@@ -552,11 +552,14 @@
                 var imgSrc = $('.art-slide img').eq( indexN ).attr('src');
                 
                 $('.art-slide').eq( indexN ).css('background', 'url(' + imgSrc + ')  center center no-repeat');
-                $('.art-slide').eq( indexN ).css('background-size', '100% 100%');
+                $('.art-slide').eq( indexN ).css('background-size', 'cover');
 
                 $('.art-slide').eq( indexN ).show();
                 
                 $('.dynamic').html( indexN+1 );
+                
+                $('.slide-nav').removeClass('sd-nav-act');
+                $('.slide-nav').eq( indexN ).addClass('sd-nav-act');
             /*
             },function(){
                 

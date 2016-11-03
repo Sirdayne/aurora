@@ -827,6 +827,67 @@ body{
 .nav:hover{
     color: #fff;
 }
+.nav-company{
+    position: relative;
+    color: #d2ab5e;
+}
+.nav-vacancy{
+    position: absolute;
+    width: 100%;
+    padding: 0 25px;
+    
+    top: 16px;
+    left: -25px;
+    z-index: 73;
+    background: #292929;
+    
+    transition: .2s linear;
+    -webkit-transition: .2s linear;
+    
+    opacity: 0;
+}
+.nav-border{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    padding: 0 25px;
+    
+    top: 25px;
+    left: -20px;
+    z-index: 72;
+    background: rgba(0,0,0,0);
+    border: 1px solid #d2ab5e;
+    
+    transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    
+    opacity: 0;
+}
+.nav-vac, .nav-com{
+    float: left;
+    width: 100%;
+    color: #d2ab5e;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+}
+.nav-vac{
+    line-height: 40px;
+    cursor: default;
+}
+.nav-com{
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+.nav-company:hover .nav-vacancy, .nav-company:hover .nav-border{
+    opacity: 1;
+}
+.nav-company:hover .nav-vac{
+    color: #fff;
+}
+.nav-vac:hover, .nav-com:hover{
+    color: #fff;
+}
 .nav-l{
     float: left;
     color: #d2ab5e;
@@ -920,13 +981,6 @@ body{
     width: 100%;
     position: relative;
 }
-.header-slide{
-    float: left;
-    width: 100%;
-    min-height: calc(100vh - 103px);
-    background: url(../img/slide-1.png) center center no-repeat;
-    background-size: cover;
-}
 .art-slide{
     float: left;
     width: 100%;
@@ -934,6 +988,14 @@ body{
     background: url(../img/slide-1.png) center center no-repeat;
     background-size: cover;
     display: none;
+}
+.header-slide{
+    float: left;
+    width: 100%;
+    min-height: calc(100vh - 103px);
+    background: url(../img/slide-1.png) center center no-repeat;
+    background-size: cover;
+    display: block;
 }
 .art-back{
     float: left;
@@ -3359,17 +3421,37 @@ body{
     left: -35px;
     top: 8px;
     
-    background: #d2ab5e;
+    background: ;
 }
-
+.prc{
+    position: relative;
+}
+.prc-border{
+    position: absolute;
+    
+    top: 400px;
+    left: 5px;
+    height: 350px;
+    width: 50%;
+    background: rgba(0,0,0,0);
+    border: 1px solid #d2ab5e;
+    
+    z-index: 1;
+}
 .contacts{
     float: left;
     width: 100%;
 }
 .contact{
     float: left;
-    width: 50%;
+    width: calc(50% - 10px);
     margin-top: 75px;
+    
+    border-left: 10px solid #d2ab5e;  
+    
+    position: relative;
+    background: #fff;
+    z-index: 2;
 }
 .conpart{
     float: left;
