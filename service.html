@@ -54,7 +54,6 @@
 						$('#moveTop').addClass('animated slideInUp');
 					}
                     */
-                    
                     if (index == 1){
 						$('.header-box').removeClass('slideInUp');
                         $('.header-box').addClass('slideOutUp');
@@ -80,7 +79,7 @@
                         */
                     }
                     /* END OF SMALL DETAILS */
-                    
+                   
                     
                     if (index == 1 && direction == 'down' ){
                         $('.js-2').removeClass('fadeOutUp fadeOutDown').css('z-index','2').show();
@@ -133,6 +132,7 @@
                         $('.header-box').addClass('slideInUp');
                         $('.header-box').removeClass('slideOutUp');
                     }
+                    
                     /* END OF FIRST */
                     
                     if (index > 0){
@@ -635,6 +635,14 @@
             
         });
     
+    
+</script>
+
+<script>
+    
+    if ($(window).width() < 800) {
+        $('.header-box').removeClass('animated');
+    }
     
 </script>
 
