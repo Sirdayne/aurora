@@ -728,7 +728,7 @@
 
 @media only screen and (max-width : 750px) { 
     .sr-left{
-        padding-top: 25%;
+        padding-top: 20%;
     }
     .mob-left, .mob-right{
         width: 30%;
@@ -759,8 +759,9 @@
 
 @media only screen and (max-width : 450px) { 
     .sr-left{
-        padding-top: 35%;
+        padding-top: 15%;
     }
+   
     .vacancy{
         width: 90%;
         left: 0;
@@ -800,7 +801,5 @@
         font-size: 15px;
         line-height: 15px;
     }
-    .sr-left{
-        padding-top: 40%;
-    }
+    
 }

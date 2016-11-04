@@ -108,7 +108,7 @@
         <!-- ВЫВОД НОВОСТИ ТУТ -->
            <div class="header-slide art-slide">
                 <div class="art-back">
-                  <img src="./img/slide-1.png" alt="">
+                  <img src="./img/art-4.jpg" alt="">
                    <div class="wrap-slide">
                        <div class="slide-left">
                             <h1>SkyTEM в Казахстане: </h1>
@@ -507,6 +507,9 @@
 
 <script type="text/javascript">
         $(document).ready(function(){ 
+            
+            $('.art-slide').eq( 0 ).css('background', 'url(' + $('.art-slide img').eq( 0 ).attr('src') + ')  center center no-repeat');
+            $('.art-slide').eq( 0 ).css('background-size', 'cover');
                 
             $('.article h2').click(function() {
 

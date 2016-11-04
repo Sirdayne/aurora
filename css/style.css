@@ -993,7 +993,7 @@ body{
     float: left;
     width: 100%;
     min-height: calc(100vh - 103px);
-    background: url(../img/slide-1.png) center center no-repeat;
+    /*background: url(../img/slide-1.png) center center no-repeat;*/
     background-size: cover;
     display: block;
 }
